@@ -1,7 +1,10 @@
 import { defineConfig } from 'astro/config';
-import vercel from '@astrojs/vercel/static';
+import tailwind from "@astrojs/tailwind";
+import vercel from '@astrojs/vercel/static'; // use the static adapter
 
 export default defineConfig({
-  output: 'static',
+  site: "https://positivustheme.vercel.app",
+  integrations: [tailwind()],
+  output: 'static', // static output
   adapter: vercel(),
 });

@@ -1,0 +1,212 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-ouamjn2i> <head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><!-- iOS 
+  <link rel="apple-touch-icon" sizes="256x256" href="/path/to/your/icon.png" />
+  --><meta name="viewport" content="width=device-width"><meta name="generator" content="Astro v5.13.5"><title>About us</title><meta name="description"><!-- SEO --><link rel="canonical" href="https://positivustheme.vercel.app/about/"><!-- Open Graph --><meta property="og:site_name" content="Site Name"><meta property="og:title" content="About us"><meta property="og:description"><meta property="og:url" content="https://positivustheme.vercel.app/about/"><meta property="og:image" content="https://github.com/manulthanura/Positivus/raw/main/public/cover.png"><meta property="og:image:url" content="https://github.com/manulthanura/Positivus/raw/main/public/cover.png"><meta property="og:image:secure_url" content="https://github.com/manulthanura/Positivus/raw/main/public/cover.png"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="600"><meta property="og:image:alt" content="Positivus"><!-- Twitter --><meta name="twitter:title" content="About us"><meta name="twitter:description"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://github.com/manulthanura/Positivus/raw/main/public/cover.png"><meta name="twitter:image:alt" content="About us"><!-- Using environment domain --><meta name="twitter:domain" content="https://positivustheme.vercel.app"><!-- JSON LD --><script type="application/ld+json">
+      {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      "name": "Positivus",
+      "url": "https://positivustheme.vercel.app"
+      }
+    </script><!-- Preconnect fonts, images... --><link rel="stylesheet" href="/_astro/about.3sXBWlc9.css">
+<style>.custom-grid[data-astro-cid-qzn24t3o]{grid-template:auto auto}
+</style></head><script type="module" src="/_astro/MainLayout.astro_astro_type_script_index_0_lang.DZe-9zfI.js"></script><body class="bg-white font-grotesk" data-astro-cid-ouamjn2i> <main data-astro-cid-ouamjn2i> <div class="mt-20"> <nav class="w-full top-0 left-0 z-50 fixed bg-white"> <header class="flex flex-col lg:flex-row justify-between items-center my-5 px-6 md:px-32">  <div class="flex w-full lg:w-auto items-center justify-between"> <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse"> <img src="/logo.png" class="h-12" alt="Logo"> </a> <div class="block lg:hidden"> <div id="menu-icon" class="w-8 h-8 text-black cursor-pointer"> <!-- Open (hamburger) icon --> <svg id="open-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-8 h-8"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg> <!-- Close (X) icon --> <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-8 h-8 hidden"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path> </svg> </div> </div> </div> <nav class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0" id="menu-items"> <ul class="font-medium flex flex-col p-4 lg:p-0 mt-4 border rounded-lg lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0"> <li> <a href="/about" class="mobile-nav-link block py-2 px-3 text-black rounded lg:bg-transparent lg:p-0" data-close-menu="true"> About us </a> </li><li> <a href="/services" class="mobile-nav-link block py-2 px-3 text-black rounded lg:bg-transparent lg:p-0" data-close-menu="true"> Services </a> </li><li> <a href="/#cases" class="mobile-nav-link block py-2 px-3 text-black rounded lg:bg-transparent lg:p-0" data-close-menu="true"> Use Cases </a> </li><li> <a href="/pricing" class="mobile-nav-link block py-2 px-3 text-black rounded lg:bg-transparent lg:p-0" data-close-menu="true"> Pricing </a> </li><li> <a href="/articles" class="mobile-nav-link block py-2 px-3 text-black rounded lg:bg-transparent lg:p-0" data-close-menu="true"> Blog </a> </li> <div class="lg:hidden flex items-center justify-center mt-3 gap-4"> <a class="mobile-nav-link px-9 py-5 rounded-2xl border border-zinc-900 bg-white hover:bg-black text-black hover:text-white inline-flex" href="https://github.com/manulthanura/Positivus" data-close-menu="true"> <h2 class="text-center text-xl font-normal leading-7">Contact Us</h2> </a> </div> </ul> </nav>  <script>(function(){const closeOnClick = false;
+
+["DOMContentLoaded", "astro:after-swap"].forEach((event) => {
+  document.addEventListener(event, addListeners);
+});
+
+// Function to clone and replace elements
+function cloneAndReplace(element) {
+  const clone = element.cloneNode(true);
+  element.parentNode.replaceChild(clone, element);
+}
+
+function addListeners() {
+  // Clean up existing listeners
+  const oldMenuButton = document.getElementById("astronav-menu");
+  if (oldMenuButton) {
+    cloneAndReplace(oldMenuButton);
+  }
+
+  const oldDropdownMenus = document.querySelectorAll(".astronav-dropdown");
+  oldDropdownMenus.forEach((menu) => {
+    cloneAndReplace(menu);
+  });
+
+  // Mobile nav toggle
+  const menuButton = document.getElementById("astronav-menu");
+  menuButton && menuButton.addEventListener("click", toggleMobileNav);
+
+  // Dropdown menus
+  const dropdownMenus = document.querySelectorAll(".astronav-dropdown");
+  dropdownMenus.forEach((menu) => {
+    const button = menu.querySelector("button");
+    button &&
+      button.addEventListener("click", (event) =>
+        toggleDropdownMenu(event, menu, dropdownMenus)
+      );
+
+    // Handle Submenu Dropdowns
+    const dropDownSubmenus = menu.querySelectorAll(
+      ".astronav-dropdown-submenu"
+    );
+
+    dropDownSubmenus.forEach((submenu) => {
+      const submenuButton = submenu.querySelector("button");
+      submenuButton &&
+        submenuButton.addEventListener("click", (event) => {
+          event.stopImmediatePropagation();
+          toggleSubmenuDropdown(event, submenu);
+        });
+    });
+  });
+
+  // Clicking away from dropdown will remove the dropdown class
+  document.addEventListener("click", closeAllDropdowns);
+
+  if (closeOnClick) {
+    handleCloseOnClick();
+  }
+}
+
+function toggleMobileNav() {
+  [...document.querySelectorAll(".astronav-toggle")].forEach((el) => {
+    el.classList.toggle("hidden");
+  });
+}
+
+function toggleDropdownMenu(event, menu, dropdownMenus) {
+  toggleMenu(menu);
+
+  // Close one dropdown when selecting another
+  Array.from(dropdownMenus)
+    .filter((el) => el !== menu && !menu.contains(el))
+    .forEach(closeMenu);
+
+  event.stopPropagation();
+}
+
+function toggleSubmenuDropdown(event, submenu) {
+  event.stopPropagation();
+  toggleMenu(submenu);
+
+  // Close sibling submenus at the same nesting level
+  const siblingSubmenus = submenu
+    .closest(".astronav-dropdown")
+    .querySelectorAll(".astronav-dropdown-submenu");
+  Array.from(siblingSubmenus)
+    .filter((el) => el !== submenu && !submenu.contains(el))
+    .forEach(closeMenu);
+}
+
+function closeAllDropdowns(event) {
+  const dropdownMenus = document.querySelectorAll(".dropdown-toggle");
+  const dropdownParent = document.querySelectorAll(
+    ".astronav-dropdown, .astronav-dropdown-submenu"
+  );
+  const isButtonInsideDropdown = [
+    ...document.querySelectorAll(
+      `.astronav-dropdown button, .astronav-dropdown label, .astronav-dropdown input,
+	  .astronav-dropdown-submenu button, .astronav-dropdown-submenu label, .astronav-dropdown-submenu input,
+	  #astronav-menu`
+    ),
+  ].some((button) => button.contains(event.target));
+  if (!isButtonInsideDropdown) {
+    dropdownMenus.forEach((d) => {
+      // console.log("I ran", d);
+      // if (!d.contains(event.target)) {
+      d.classList.remove("open");
+      d.removeAttribute("open");
+      d.classList.add("hidden");
+      // }
+    });
+    dropdownParent.forEach((d) => {
+      d.classList.remove("open");
+      d.removeAttribute("open");
+      d.setAttribute("aria-expanded", "false");
+    });
+  }
+}
+
+function toggleMenu(menu) {
+  menu.classList.toggle("open");
+  const expanded = menu.getAttribute("aria-expanded") === "true";
+  menu.setAttribute("aria-expanded", expanded ? "false" : "true");
+  menu.hasAttribute("open")
+    ? menu.removeAttribute("open")
+    : menu.setAttribute("open", "");
+
+  const dropdownToggle = menu.querySelector(".dropdown-toggle");
+  const dropdownExpanded = dropdownToggle.getAttribute("aria-expanded");
+  dropdownToggle.classList.toggle("hidden");
+  dropdownToggle.setAttribute(
+    "aria-expanded",
+    dropdownExpanded === "true" ? "false" : "true"
+  );
+}
+
+function closeMenu(menu) {
+  // console.log("closing", menu);
+  menu.classList.remove("open");
+  menu.removeAttribute("open");
+  menu.setAttribute("aria-expanded", "false");
+  const dropdownToggles = menu.querySelectorAll(".dropdown-toggle");
+  dropdownToggles.forEach((toggle) => {
+    toggle.classList.add("hidden");
+    toggle.setAttribute("aria-expanded", "false");
+  });
+}
+
+function handleCloseOnClick() {
+  const navMenuItems = document.querySelector(".astronav-items");
+  const navToggle = document.getElementById("astronav-menu");
+  const navLink = navMenuItems && navMenuItems.querySelectorAll("a");
+
+  const MenuIcons = navToggle.querySelectorAll(".astronav-toggle");
+
+  navLink &&
+    navLink.forEach((item) => {
+      item.addEventListener("click", () => {
+        navMenuItems?.classList.add("hidden");
+        MenuIcons.forEach((el) => {
+          el.classList.toggle("hidden");
+        });
+      });
+    });
+}
+})();</script> <div> <div class="hidden lg:flex items-center gap-4"> <a class="px-9 py-5 rounded-2xl border border-zinc-900 bg-white hover:bg-black text-black hover:text-white inline-flex" href="https://github.com/manulthanura/Positivus"> <h2 class="text-center text-xl font-normal leading-7">Contact Us</h2> </a> </div> </div> </header> </nav> </div> <script>
+  // Get references to the menu icon, open/close icons, and menu items
+  const menuIcon = document.getElementById('menu-icon');
+  const openIcon = document.getElementById('open-icon');
+  const closeIcon = document.getElementById('close-icon');
+  const menuItems = document.getElementById('menu-items');
+  const closeMenuItems = document.querySelectorAll('[data-close-menu="true"]');  // Select all items with the 'data-close-menu' attribute
+
+  // Toggle the menu visibility and icon when the menu icon is clicked
+  menuIcon.addEventListener('click', () => {
+    menuItems.classList.toggle('hidden');  // Toggle the 'hidden' class on the menu
+
+    // Toggle between open and close icons
+    openIcon.classList.toggle('hidden');
+    closeIcon.classList.toggle('hidden');
+  });
+
+  // Close the menu when any item is clicked
+  closeMenuItems.forEach(item => {
+    item.addEventListener('click', () => {
+      menuItems.classList.add('hidden');  // Add the 'hidden' class to hide the menu
+      openIcon.classList.remove('hidden');  // Show the open (hamburger) icon
+      closeIcon.classList.add('hidden');  // Hide the close (X) icon
+    });
+  });
+</script>  <main class="space-y-20"> <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-3"> <div class="relative flex flex-col-reverse items-center md:flex-row" id="hero"> <div class="row items-center py-5 md:pb-20 md:pt-10"> <div class="text-center space-y-10"> <h2 class="text-5xl font-medium leading-none md:text-6xl">We Navigate the <br> digital landscape <br> for success</h2> <p class="mt-6 mb-8  text-xl font-normal leading-7 sm:mb-12">Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p> <a class="px-9 py-5 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex" rel="noopener noreferrer" href="https://github.com/manulthanura/Positivus" target="_blank"> <h2 class="text-center text-xl font-normal leading-7">Book a consultation</h2> </a> </div> </div> </div> </div> <section id="sponsors" class="px-5 flex justify-center overflow-hidden lg:block"> <div class="w-full max-w-[1280px] mx-auto">  <div class="flex-row items-center"> <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6"> <div class="p-4 grayscale transition duration-200 hover:grayscale-0"> <img src="/_astro/company-logo6.BTRoJjnx_Z1xSLRO.svg" alt="Amazon logo" loading="lazy" decoding="async" fetchpriority="auto" width="125" height="48" class="h-12 w-auto mx-auto"> </div><div class="p-4 grayscale transition duration-200 hover:grayscale-0"> <img src="/_astro/company-logo5.BbmFav3z_Z1xKDur.svg" alt="Dribble logo" loading="lazy" decoding="async" fetchpriority="auto" width="127" height="48" class="h-12 w-auto mx-auto"> </div><div class="p-4 grayscale transition duration-200 hover:grayscale-0"> <img src="/_astro/company-logo4.COtkDUvM_Z1xCv74.svg" alt="HubSpot logo" loading="lazy" decoding="async" fetchpriority="auto" width="129" height="48" class="h-12 w-auto mx-auto"> </div><div class="p-4 grayscale transition duration-200 hover:grayscale-0"> <img src="/_astro/company-logo3.c2biK_9v_Z1tCnBK.svg" alt="Notion logo" loading="lazy" decoding="async" fetchpriority="auto" width="147" height="48" class="h-12 w-auto mx-auto"> </div><div class="p-4 grayscale transition duration-200 hover:grayscale-0"> <img src="/_astro/company-logo2.CREQfids_Z1xOHG8.svg" alt="Netflix logo" loading="lazy" decoding="async" fetchpriority="auto" width="126" height="48" class="h-12 w-auto mx-auto"> </div><div class="p-4 grayscale transition duration-200 hover:grayscale-0"> <img src="/_astro/company-logo1.syO998vd_Z1AebzU.svg" alt="Zoom logo" loading="lazy" decoding="async" fetchpriority="auto" width="111" height="48" class="h-12 w-auto mx-auto"> </div> </div> </div>  </div> </section> <section id="services" class="px-5 flex justify-center overflow-hidden lg:block"> <div class="w-full max-w-[1280px] mx-auto">  <div class="mt-[140px] mb-5"> <div class="flex flex-col items-center gap-10 mb-20 sm:flex-row"> <h2 class="greenhead text-center sm:text-left text-3xl sm:text-4xl">Services</h2> <p class="w-auto text-center sm:text-left sm:w-[580px]"> At CR9, we provide a full range of reliable services to keep your home or business running safely and efficiently. From quick repairs and emergency call-outs to complete installations and upgrades, our expert electricians are ready to handle all your electrical needs with professionalism and care. </p> </div> <div class="grid lg:grid-cols-2 lg:grid-rows-3 gap-10"> <div class="rounded-[45px] border border-dark shadow-[0px_5px_0px_#191a23]"> <div class="h-[300px] w-full sm:h-full lg:gap-[60px] grid custom-grid lg:grid-cols-2 lg:grid-rows-1 p-8 sm:p-[50px] rounded-[45px] bg-gray" data-astro-cid-qzn24t3o> <h3 class="flex flex-col col-span-2 lg:col-span-1" data-astro-cid-qzn24t3o> <span class="w-[fit-content] greenhead" data-astro-cid-qzn24t3o>Ceiling Fan</span> <span class="w-[fit-content] greenhead" data-astro-cid-qzn24t3o>Installation</span> </h3> <picture class="w-full h-full row-span-1 order-1 lg:order-none lg:row-span-2 flex justify-center items-center" data-astro-cid-qzn24t3o> <img src="/_astro/celing.Ct532e2k_1335zu.webp" alt="SEO" data-astro-cid-qzn24t3o="true" loading="lazy" decoding="async" fetchpriority="auto" width="4000" height="2668" class="h-[200px] w-auto sm:h-auto sm:w-4/4 object-cover"> </picture> <div class="flex items-end" data-astro-cid-qzn24t3o> <a href="https://google.com" class="flex items-center gap-3.5" data-astro-cid-qzn24t3o><img src="/_astro/icon6.gU4U-Esm_1BQasg.svg" alt="SEO" data-astro-cid-qzn24t3o="true" loading="lazy" decoding="async" fetchpriority="auto" width="41" height="41"> <span class="hidden sm:block" data-astro-cid-qzn24t3o>Service Info</span></a> </div> </div> </div> <div class="rounded-[45px] border border-dark shadow-[0px_5px_0px_#191a23]"> <div class="h-[300px] w-full sm:h-full lg:gap-[60px] grid custom-grid lg:grid-cols-2 lg:grid-rows-1 p-8 sm:p-[50px] rounded-[45px] bg-green" data-astro-cid-qzn24t3o> <h3 class="flex flex-col col-span-2 lg:col-span-1" data-astro-cid-qzn24t3o> <span class="w-[fit-content] whitehead" data-astro-cid-qzn24t3o>Electrical</span> <span class="w-[fit-content] whitehead" data-astro-cid-qzn24t3o>Rewire</span> </h3> <picture class="w-full h-full row-span-1 order-1 lg:order-none lg:row-span-2 flex justify-center items-center" data-astro-cid-qzn24t3o> <img src="/_astro/rewire.ZePAg39o_2h7maG.webp" alt="SEO" data-astro-cid-qzn24t3o="true" loading="lazy" decoding="async" fetchpriority="auto" width="4000" height="2667" class="h-[200px] w-auto sm:h-auto sm:w-4/4 object-cover"> </picture> <div class="flex items-end" data-astro-cid-qzn24t3o> <a href="https://google.com" class="flex items-center gap-3.5" data-astro-cid-qzn24t3o><img src="/_astro/icon6.gU4U-Esm_1BQasg.svg" alt="SEO" data-astro-cid-qzn24t3o="true" loading="lazy" decoding="async" fetchpriority="auto" width="41" height="41"> <span class="hidden sm:block" data-astro-cid-qzn24t3o>Service Info</span></a> </div> </div> </div> <div class="rounded-[45px] border border-dark shadow-[0px_5px_0px_#191a23]"> <div class="h-[300px] w-full sm:h-full lg:gap-[60px] grid custom-grid lg:grid-cols-2 lg:grid-rows-1 p-8 sm:p-[50px] rounded-[45px] bg-dark text-gray" data-astro-cid-qzn24t3o> <h3 class="flex flex-col col-span-2 lg:col-span-1" data-astro-cid-qzn24t3o> <span class="w-[fit-content] whitehead" data-astro-cid-qzn24t3o>Electric Cooker</span> <span class="w-[fit-content] whitehead" data-astro-cid-qzn24t3o>Installation</span> </h3> <picture class="w-full h-full row-span-1 order-1 lg:order-none lg:row-span-2 flex justify-center items-center" data-astro-cid-qzn24t3o> <img src="/_astro/cook.CK3oD-Kh_ZVYy5e.webp" alt="SEO" data-astro-cid-qzn24t3o="true" loading="lazy" decoding="async" fetchpriority="auto" width="923" height="786" class="h-[200px] w-auto sm:h-auto sm:w-4/4 object-cover"> </picture> <div class="flex items-end" data-astro-cid-qzn24t3o> <a href="https://google.com" class="flex items-center gap-3.5" data-astro-cid-qzn24t3o><img src="/_astro/icon7._oy4oYgP_1BQasg.svg" alt="SEO" data-astro-cid-qzn24t3o="true" loading="lazy" decoding="async" fetchpriority="auto" width="41" height="41"> <span class="hidden sm:block" data-astro-cid-qzn24t3o>Service Info</span></a> </div> </div> </div> <div class="rounded-[45px] border border-dark shadow-[0px_5px_0px_#191a23]"> <div class="h-[300px] w-full sm:h-full lg:gap-[60px] grid custom-grid lg:grid-cols-2 lg:grid-rows-1 p-8 sm:p-[50px] rounded-[45px] bg-gray" data-astro-cid-qzn24t3o> <h3 class="flex flex-col col-span-2 lg:col-span-1" data-astro-cid-qzn24t3o> <span class="w-[fit-content] greenhead" data-astro-cid-qzn24t3o>Electric Under Floor</span> <span class="w-[fit-content] greenhead" data-astro-cid-qzn24t3o>Heating Installation</span> </h3> <picture class="w-full h-full row-span-1 order-1 lg:order-none lg:row-span-2 flex justify-center items-center" data-astro-cid-qzn24t3o> <img src="/_astro/floor.DZtBmI-B_Z2egDft.webp" alt="SEO" data-astro-cid-qzn24t3o="true" loading="lazy" decoding="async" fetchpriority="auto" width="624" height="705" class="h-[200px] w-auto sm:h-auto sm:w-4/4 object-cover"> </picture> <div class="flex items-end" data-astro-cid-qzn24t3o> <a href="https://google.com" class="flex items-center gap-3.5" data-astro-cid-qzn24t3o><img src="/_astro/icon6.gU4U-Esm_1BQasg.svg" alt="SEO" data-astro-cid-qzn24t3o="true" loading="lazy" decoding="async" fetchpriority="auto" width="41" height="41"> <span class="hidden sm:block" data-astro-cid-qzn24t3o>Service Info</span></a> </div> </div> </div> <div class="rounded-[45px] border border-dark shadow-[0px_5px_0px_#191a23]"> <div class="h-[300px] w-full sm:h-full lg:gap-[60px] grid custom-grid lg:grid-cols-2 lg:grid-rows-1 p-8 sm:p-[50px] rounded-[45px] bg-green" data-astro-cid-qzn24t3o> <h3 class="flex flex-col col-span-2 lg:col-span-1" data-astro-cid-qzn24t3o> <span class="w-[fit-content] whitehead" data-astro-cid-qzn24t3o>Electrical Vehicle</span> <span class="w-[fit-content] whitehead" data-astro-cid-qzn24t3o>Home Charger</span> </h3> <picture class="w-full h-full row-span-1 order-1 lg:order-none lg:row-span-2 flex justify-center items-center" data-astro-cid-qzn24t3o> <img src="/_astro/car.BE5A-ru5_Z1By9Di.webp" alt="SEO" data-astro-cid-qzn24t3o="true" loading="lazy" decoding="async" fetchpriority="auto" width="5472" height="3648" class="h-[200px] w-auto sm:h-auto sm:w-4/4 object-cover"> </picture> <div class="flex items-end" data-astro-cid-qzn24t3o> <a href="https://google.com" class="flex items-center gap-3.5" data-astro-cid-qzn24t3o><img src="/_astro/icon6.gU4U-Esm_1BQasg.svg" alt="SEO" data-astro-cid-qzn24t3o="true" loading="lazy" decoding="async" fetchpriority="auto" width="41" height="41"> <span class="hidden sm:block" data-astro-cid-qzn24t3o>Service Info</span></a> </div> </div> </div> <div class="rounded-[45px] border border-dark shadow-[0px_5px_0px_#191a23]"> <div class="h-[300px] w-full sm:h-full lg:gap-[60px] grid custom-grid lg:grid-cols-2 lg:grid-rows-1 p-8 sm:p-[50px] rounded-[45px] bg-dark text-gray" data-astro-cid-qzn24t3o> <h3 class="flex flex-col col-span-2 lg:col-span-1" data-astro-cid-qzn24t3o> <span class="w-[fit-content] whitehead" data-astro-cid-qzn24t3o>Emergency</span> <span class="w-[fit-content] whitehead" data-astro-cid-qzn24t3o>Electricians</span> </h3> <picture class="w-full h-full row-span-1 order-1 lg:order-none lg:row-span-2 flex justify-center items-center" data-astro-cid-qzn24t3o> <img src="/_astro/emergency.DxzE4z5s_Z1taDUp.webp" alt="SEO" data-astro-cid-qzn24t3o="true" loading="lazy" decoding="async" fetchpriority="auto" width="3433" height="2285" class="h-[200px] w-auto sm:h-auto sm:w-4/4 object-cover"> </picture> <div class="flex items-end" data-astro-cid-qzn24t3o> <a href="https://google.com" class="flex items-center gap-3.5" data-astro-cid-qzn24t3o><img src="/_astro/icon7._oy4oYgP_1BQasg.svg" alt="SEO" data-astro-cid-qzn24t3o="true" loading="lazy" decoding="async" fetchpriority="auto" width="41" height="41"> <span class="hidden sm:block" data-astro-cid-qzn24t3o>Service Info</span></a> </div> </div> </div>  </div> </div> <div class="rounded-[45px]"> <div class="p-8 md:p-12 grid md:grid-cols-2 gap-12 items-center"> <div> <h2 class="text-4xl font-bold mb-6">Our Electrical Engineer Will Take Good Care of You</h2> <p class="mb-6">
+Our engineers are professional and skilled in all aspects of Electrical work.
+</p> <ul class="space-y-3 mb-8"> <li class="flex items-start"> <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path> </svg> <span>Landlord Electrical Certificates</span> </li> <li class="flex items-start"> <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path> </svg> <span>Electrical rewiring</span> </li> <li class="flex items-start"> <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path> </svg> <span>Smoke and Fire Alarms</span> </li> <li class="flex items-start"> <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path> </svg> <span>New light installations</span> </li> <li class="flex items-start"> <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path> </svg> <span>PAT Testing</span> </li> <li class="flex items-start"> <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path> </svg> <span>Periodic Electrical Inspections</span> </li> <li class="flex items-start"> <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path> </svg> <span>Electrical Fault Finding</span> </li> <li class="flex items-start"> <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path> </svg> <span>Door Entry Systems</span> </li> <li class="flex items-start"> <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path> </svg> <span>EV Car Charging Port Installations</span> </li> <li class="flex items-start"> <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path> </svg> <span>EICR Electrical Installation Condition Report</span> </li> </ul> </div> <div class=" rounded-2xl p-8"> <img src="/_astro/pexels-shkrabaanthony-4981802.KU9t9d4r_ZxRpo5.webp" alt="alt" loading="lazy" decoding="async" fetchpriority="auto" width="4000" height="6000" class="h-[200px] w-auto sm:h-auto sm:w-4/4 object-cover"> </div> </div> </div>  </div> </section> </main>  <section class="sm:px-5"> <div class="w-full max-w-[1240px] mx-auto"> <div class="px-[15px] bg-dark text-gray py-[55px] lg:px-[60px] sm:rounded-t-[45px]"> <div> <div class="flex flex-col lg:flex-row gap-7 items-center justify-between"> <picture> <a href="#home"> <img src="/_astro/logo.BGYRLySS_BnwJ5.webp" alt="Logo for Kreatif Brand" loading="lazy" decoding="async" fetchpriority="auto" width="300" height="58"> </a> </picture> <ul class="flex flex-col sm:flex-row gap-5"> <li class="text-center"> <a class="underline" href="#about"> About us </a> </li><li class="text-center"> <a class="underline" href="#services"> Services </a> </li><li class="text-center"> <a class="underline" href="#cases"> Use Cases </a> </li><li class="text-center"> <a class="underline" href="#Testimonials"> Pricing </a> </li><li class="text-center"> <a class="underline" href="#Home"> Blog </a> </li> </ul> <ul class="flex gap-5"> <li> <a href="https://facebook.com" target="_blank"> <picture> <img src="/_astro/facebook.D0JOV-zG_1j6NTq.svg" alt="Facebook" loading="lazy" decoding="async" fetchpriority="auto" width="30" height="30"> </picture> </a> </li><li> <a href="https://linkedin.com" target="_blank"> <picture> <img src="/_astro/linkedin.eKpMB-Du_1j6NTq.svg" alt="Linkedin" loading="lazy" decoding="async" fetchpriority="auto" width="30" height="30"> </picture> </a> </li><li> <a href="https://twitter.com" target="_blank"> <picture> <img src="/_astro/twitter.CkIHlicD_1j6NTq.svg" alt="Twitter" loading="lazy" decoding="async" fetchpriority="auto" width="30" height="30"> </picture> </a> </li> </ul> </div> <div class="flex flex-col lg:flex-row mt-[66px] mb-[51px]"> <div class="flex text-center lg:text-start flex-col w-full lg:w-[30%]"> <h3 class="mb-5 text-center md:text-left text-2xl text-green">Contact us</h3> <div class="flex flex-col justify-between gap-4"> <span> Email: examplemail.com </span> <span> Phone: +123 456 789 </span> <span class="lg:w-3/4">
+Address: 1234 Street Name, City Name, Country Name
+</span> </div> </div> <div class="flex-grow my-10 lg:my-0 lg:ml-12"> <form class="bg-[#292A32] px-10 py-14 rounded-[14px] gap-5 h-full flex flex-col sm:flex-row items-center justify-center"> <div class="w-full sm:w-[55%]"> <input type="text" id="email" name="email" placeholder="Email" class="bg-transparent w-full px-[35px] py-5 border rounded-[14px] focus:outline-none"> </div> <button type="submit" name="submit" class="w-full sm:w-[45%] btn-tertiary">Subscribe to news</button> </form> </div> </div> </div> <div class="h-[1px] bg-gray mb-5"></div> <div class="flex flex-col lg:flex-row h-20 justify-center mt-4 text-center md:justify-between md:mt-0"> <span>2024 Positivus - Made With <a class="underline" target="_blank" href="https://astro.build">Astro</a> by
+<a class="underline" target="_blank" href="https://manulthanura.com">Manul</a></span>&nbsp
+<span>
+Credits (
+<a href="https://www.olgaskuja.design/" target="_blank" class="underline">Olga</a>,
+<a href="https://esteban-vasquez.netlify.app/" target="_blank" class="underline">Esteban</a>)
+<span> &</span> <a class="underline" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Licence</a> </span> </div> </div> </div> </section> </main> </body></html>
