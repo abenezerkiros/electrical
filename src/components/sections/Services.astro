@@ -3,6 +3,7 @@ import SectionTitle from "../ui/SectionTitle.astro";
 import ServiceCard from "../ui/ServiceCard.astro";
 import Section from "./Section.astro";
 import { Image } from "astro:assets";
+
 import c1 from "../../assets/pics/celing.jpg";
 import c2 from "../../assets/pics/rewire.webp";
 import c3 from "../../assets/pics/cook.webp";
@@ -12,55 +13,14 @@ import c6 from "../../assets/pics/emergency.webp";
 import c8 from "../../assets/pics/pexels-shkrabaanthony-4981802.jpg";
 
 import Card from "../ui/Card.astro";
+
 const cards = [
-  {
-    index: 1,
-    titleTop: "Ceiling Fan",
-    titleBottom: "Installation",
-    img: c1,
-    alt: "SEO",
-    link: "/services/seo",
-  },
-  {
-    index: 2,
-    titleTop: "Electrical",
-    titleBottom: "Rewire",
-    img: c2,
-    alt: "SEO",
-    link: "/services/seo",
-  },
-  {
-    index: 3,
-    titleTop: "Electric Cooker",
-    titleBottom: "Installation",
-    img: c3,
-    alt: "SEO",
-    link: "/services/seo",
-  },
-  {
-    index: 1,
-    titleTop: "Electric Under Floor",
-    titleBottom: "Heating Installation",
-    img: c4,
-    alt: "SEO",
-    link: "/services/seo",
-  },
-  {
-    index: 2,
-    titleTop: "Electrical Vehicle",
-    titleBottom: "Home Charger",
-    img: c5,
-    alt: "SEO",
-    link: "/services/seo",
-  },
-  {
-    index: 3,
-    titleTop: "Emergency",
-    titleBottom: "Electricians",
-    img: c6,
-    alt: "SEO",
-    link: "/services/seo",
-  },
+  { index: 1, titleTop: "Ceiling Fan", titleBottom: "Installation", img: c1, alt: "Ceiling Fan Installation", link: "/services/ceiling-fan" },
+  { index: 2, titleTop: "Electrical", titleBottom: "Rewire", img: c2, alt: "Electrical Rewire", link: "/services/rewire" },
+  { index: 3, titleTop: "Electric Cooker", titleBottom: "Installation", img: c3, alt: "Cooker Installation", link: "/services/cooker" },
+  { index: 4, titleTop: "Electric Under Floor", titleBottom: "Heating Installation", img: c4, alt: "Under Floor Heating", link: "/services/underfloor" },
+  { index: 5, titleTop: "Electrical Vehicle", titleBottom: "Home Charger", img: c5, alt: "EV Home Charger", link: "/services/ev-charger" },
+  { index: 6, titleTop: "Emergency", titleBottom: "Electricians", img: c6, alt: "Emergency Electricians", link: "/services/emergency" },
 ];
 
 const description =
@@ -71,20 +31,21 @@ const description =
   <div class="mt-[140px] mb-5">
     <SectionTitle sectionTitle="Services" description={description} />
     <div class="grid lg:grid-cols-2 lg:grid-rows-3 gap-10">
-      {
-        cards.map((card) => (
-          <ServiceCard
-            index={card.index}
-            titleTop={card.titleTop}
-            titleBottom={card.titleBottom}
-            img={card.img}
-            alt={card.alt}
-            link={card.link}
-          />
-        ))
-      }
+      {cards.map((card) => (
+        <ServiceCard
+          index={card.index}
+          titleTop={card.titleTop}
+          titleBottom={card.titleBottom}
+          img={card.img}
+          alt={card.alt}
+          link={card.link}
+          widths={[400, 800, 1200, 1600]}
+          sizes="(max-width: 1024px) 100vw, 50vw"
+        />
+      ))}
     </div>
   </div>
+
   <Card>
     <div class="p-8 md:p-12 grid md:grid-cols-2 gap-12 items-center">
       <div>
@@ -155,16 +116,15 @@ const description =
           </li>
         </ul>
       </div>
-      <div class=" rounded-2xl p-8">
+      <div class="rounded-2xl p-8">
         <Image
-        src={c8}
-        alt={"alt"}
-        class="h-[300px] w-auto sm:h-auto sm:w-4/4 object-cover"
-      />
+          src={c8}
+          alt="Electrical Engineer"
+          class="h-[300px] w-auto sm:h-auto sm:w-full object-cover"
+          widths={[400, 800, 1200, 1600]}   
+          sizes="(max-width: 768px) 100vw, 50vw"
+        />
       </div>
     </div>
   </Card>
-</div>
-</div>
-
 </Section>

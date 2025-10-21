@@ -4,7 +4,7 @@ import Card from "../../components/ui/Card.astro";
 import { Image } from "astro:assets";
 
 import seoImg from "../../assets/pics/celing.jpg";
-import ceiling from "../../assets/pics/pexels-danita-white-2147858101-33921996.jpg"
+import ceiling from "../../assets/pics/pexels-danita-white-2147858101-33921996.jpg";
 import icon1 from "../../assets/icon1.svg";
 import icon2 from "../../assets/icon2.svg";
 import icon3 from "../../assets/icon3.svg";
@@ -55,6 +55,36 @@ const process = [
     icon: icon4
   }
 ];
+
+const serviceItems = {
+  "Standard Installation": [
+    "Replacing existing light fixtures",
+    "Secure mounting and balancing",
+    "Wiring and switch installation",
+    "Testing and safety checks",
+    "Demonstration of operation"
+  ],
+  "New Installation": [
+    "Installation in rooms without existing fixtures",
+    "New wiring and circuit installation",
+    "Ceiling reinforcement if needed",
+    "Wall switch and control installation",
+    "Clean, minimal-disruption approach"
+  ],
+  "Maintenance & Repair": [
+    "Wobble correction and balancing",
+    "Noise diagnosis and repair",
+    "Switch and control replacement",
+    "Motor repair or replacement",
+    "Blade replacement and cleaning"
+  ],
+  "Why Choose Us": [
+    "Certified, licensed electricians",
+    "2-year installation guarantee",
+    "Same-day service available",
+    "Free estimates for all services"
+  ]
+};
 ---
 
 <MainLayout 
@@ -90,119 +120,23 @@ const process = [
     <div class="mb-24">
       <h2 class="mb-12 text-3xl font-medium text-center">Our Ceiling Fan Services</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <Card>
-          <div class="p-8">
-            <h3 class="text-xl font-medium mb-4">Standard Installation</h3>
-            <ul class="space-y-3">
-              <li class="flex items-start">
-                <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                <span>Replacing existing light fixtures</span>
-              </li>
-              <li class="flex items-start">
-                <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                <span>Secure mounting and balancing</span>
-              </li>
-              <li class="flex items-start">
-                <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                <span>Wiring and switch installation</span>
-              </li>
-              <li class="flex items-start">
-                <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                <span>Testing and safety checks</span>
-              </li>
-              <li class="flex items-start">
-                <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                <span>Demonstration of operation</span>
-              </li>
-            </ul>
-          </div>
-        </Card>
-        
-        <Card>
-          <div class="p-8">
-            <h3 class="text-xl font-medium mb-4">New Installation</h3>
-            <ul class="space-y-3">
-              <li class="flex items-start">
-                <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                <span>Installation in rooms without existing fixtures</span>
-              </li>
-              <li class="flex items-start">
-                <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                <span>New wiring and circuit installation</span>
-              </li>
-              <li class="flex items-start">
-                <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                <span>Ceiling reinforcement if needed</span>
-              </li>
-              <li class="flex items-start">
-                <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                <span>Wall switch and control installation</span>
-              </li>
-              <li class="flex items-start">
-                <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                <span>Clean, minimal-disruption approach</span>
-              </li>
-            </ul>
-          </div>
-        </Card>
-        
-        <Card>
-          <div class="p-8">
-            <h3 class="text-xl font-medium mb-4">Maintenance & Repair</h3>
-            <ul class="space-y-3">
-              <li class="flex items-start">
-                <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                <span>Wobble correction and balancing</span>
-              </li>
-              <li class="flex items-start">
-                <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                <span>Noise diagnosis and repair</span>
-              </li>
-              <li class="flex items-start">
-                <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                <span>Switch and control replacement</span>
-              </li>
-              <li class="flex items-start">
-                <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                <span>Motor repair or replacement</span>
-              </li>
-              <li class="flex items-start">
-                <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                <span>Blade replacement and cleaning</span>
-              </li>
-            </ul>
-          </div>
-        </Card>
+        {Object.entries(serviceItems).slice(0, 3).map(([title, items]) => (
+          <Card>
+            <div class="p-8">
+              <h3 class="text-xl font-medium mb-4">{title}</h3>
+              <ul class="space-y-3">
+                {items.map(item => (
+                  <li class="flex items-start">
+                    <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]">
+                      <use href="#icon-check"></use>
+                    </svg>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Card>
+        ))}
       </div>
     </div>
     
@@ -250,35 +184,18 @@ const process = [
               Contact CR9 Electrician Croydon for professional ceiling fan installation services. We serve all of Croydon and surrounding areas with prompt, reliable service.
             </p>
             <ul class="space-y-3 mb-8">
-              <li class="flex items-start">
-                <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                <span>Certified, licensed electricians</span>
-              </li>
-              <li class="flex items-start">
-                <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                <span>2-year installation guarantee</span>
-              </li>
-              <li class="flex items-start">
-                <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                <span>Same-day service available</span>
-              </li>
-              <li class="flex items-start">
-                <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                <span>Free estimates for all services</span>
-              </li>
+              {serviceItems["Why Choose Us"].map(item => (
+                <li class="flex items-start">
+                  <svg class="mr-2 w-5 h-5 mt-1 text-[#f47629]">
+                    <use href="#icon-check"></use>
+                  </svg>
+                  <span>{item}</span>
+                </li>
+              ))}
             </ul>
           </div>
-          <div class=" rounded-2xl p-8">
+          <div class="rounded-2xl p-8">
             <Image src={ceiling} alt="Ceiling Fan Installation" class="w-full h-auto rounded-[35px]" />
-
           </div>
         </div>
       </Card>

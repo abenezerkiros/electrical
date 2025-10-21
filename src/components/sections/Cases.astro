@@ -2,6 +2,9 @@
 import { Image } from "astro:assets";
 import Card from "../ui/Card.astro";
 import Section from "./Section.astro";
+import SectionTitle from "../ui/SectionTitle.astro";
+
+import larrow from "../../assets/icon3.svg";
 
 const cards = [
   {
@@ -23,34 +26,36 @@ const cards = [
     link: "#",
   },
 ];
-
-
-import larrow from "../../assets/icon3.svg";
-import SectionTitle from "../ui/SectionTitle.astro";
 ---
+
+<!-- Preload arrow icon in head -->
+<head>
+  <link rel="preload" as="image" href={larrow.src} />
+</head>
 
 <Section id="cases">
   <SectionTitle
     sectionTitle="Case Studies"
-    description = "Discover real-life examples of our trusted electrical work, showcasing successful installations, repairs, and emergency solutions we’ve delivered for homes and businesses."
-    />
-  <div class="flex flex-col lg:flex-row justify-between rounded-[45px] p-1">
-    {
-      cards.map((card) => (
-        <Card>
-          <div class="flex p-[60px] h-full bg-dark text-gray rounded-[45px] m-[1px]">
-            <div class="flex flex-col gap-5">
-              <p>{card.title}</p>
-              <a href={card.link} class="flex items-center gap-[15px]">
-                <span class="text-green">Case Info</span>
-                <picture>
-                  <Image src={larrow} alt="Arrow pointing up right" />
-                </picture>
-              </a>
-            </div>
-          </div>
-        </Card>
-      ))
-    }
+    description="Discover real-life examples of our trusted electrical work, showcasing successful installations, repairs, and emergency solutions we’ve delivered for homes and businesses."
+  />
+
+  <div class="flex flex-col lg:flex-row justify-between gap-6">
+    {cards.map((card) => (
+      <Card key={card.index}>
+        <div class="flex flex-col p-10 h-full bg-dark text-gray rounded-[45px] gap-5">
+          <p>{card.title}</p>
+          <a href={card.link} class="flex items-center gap-3 text-green font-medium">
+            <span>Case Info</span>
+            <Image 
+              src={larrow} 
+              alt="Arrow pointing up right" 
+              class="w-5 h-5"
+              loading="eager"
+              fetchpriority="high"
+            />
+          </a>
+        </div>
+      </Card>
+    ))}
   </div>
 </Section>
