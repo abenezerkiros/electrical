@@ -108,7 +108,7 @@ const serviceItems = {
           </a>
         </div>
       </div>
-      <div class="relative">
+      <div class="[content-visibility:auto] [contain-intrinsic-size:400px] relative">
         <div class="bg-green rounded-[45px] p-1 md:p-2 relative z-10">
           <Image src={seoImg} alt="Ceiling Fan Installation" class="w-full h-auto rounded-[35px]" />
         </div>
@@ -117,7 +117,7 @@ const serviceItems = {
     </div>
     
     <!-- Services Overview -->
-    <div class="mb-24">
+    <div class="[content-visibility:auto] [contain-intrinsic-size:600px] mb-24">
       <h2 class="mb-12 text-3xl font-medium text-center">Our Ceiling Fan Services</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {Object.entries(serviceItems).slice(0, 3).map(([title, items]) => (
@@ -141,7 +141,7 @@ const serviceItems = {
     </div>
     
     <!-- Process Section -->
-    <div class="mb-24" id="process">
+    <div class="[content-visibility:auto] [contain-intrinsic-size:700px] mb-24" id="process">
       <h2 class="mb-12 text-3xl font-medium text-center">Our Installation Process</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         {process.map((step, index) => (
@@ -160,7 +160,7 @@ const serviceItems = {
     </div>
     
     <!-- FAQ Section -->
-    <div class="mb-24">
+    <div class="[content-visibility:auto] [contain-intrinsic-size:600px] mb-24">
       <h2 class="mb-12 text-3xl font-medium text-center">Frequently Asked Questions</h2>
       <div class="grid md:grid-cols-2 gap-8">
         {faqItems.map(item => (
@@ -175,7 +175,7 @@ const serviceItems = {
     </div>
     
     <!-- Contact Section -->
-    <div id="contact">
+    <div class="[content-visibility:auto] [contain-intrinsic-size:500px]" id="contact">
       <Card>
         <div class="p-8 md:p-12 grid md:grid-cols-2 gap-12 items-center">
           <div>
@@ -194,7 +194,7 @@ const serviceItems = {
               ))}
             </ul>
           </div>
-          <div class="rounded-2xl p-8">
+          <div class="rounded-2xl p-8 [content-visibility:auto] [contain-intrinsic-size:400px]">
             <Image src={ceiling} alt="Ceiling Fan Installation" class="w-full h-auto rounded-[35px]" />
           </div>
         </div>
@@ -202,3 +202,4 @@ const serviceItems = {
     </div>
   </div>
 </MainLayout>
+

@@ -15,11 +15,32 @@ import MainLayout from "../layouts/MainLayout.astro";
   description="A beautiful and functional landing page design created specifically for digital marketing agencies. With its clean and modern design, Positivus is the perfect template to showcase your agency's services and case studies to potential clients. Built with astro and tailwindcss"
 >
   <Hero />
-  <Sponsors />
-  <Services />
-  <Proposal />
-  <Cases />
-  <Process />
-  <Testimonials />
-  <Contact />
+
+  <div class="[content-visibility:auto] [contain-intrinsic-size:400px]">
+    <Sponsors />
+  </div>
+
+  <div class="[content-visibility:auto] [contain-intrinsic-size:600px]">
+    <Services />
+  </div>
+
+  <div class="[content-visibility:auto] [contain-intrinsic-size:500px]">
+    <Proposal />
+  </div>
+
+  <div class="[content-visibility:auto] [contain-intrinsic-size:700px]">
+    <Cases />
+  </div>
+
+  <div class="[content-visibility:auto] [contain-intrinsic-size:600px]">
+    <Process />
+  </div>
+
+  <div class="[content-visibility:auto] [contain-intrinsic-size:600px]">
+    <Testimonials />
+  </div>
+
+  <div class="[content-visibility:auto] [contain-intrinsic-size:500px]">
+    <Contact />
+  </div>
 </MainLayout>
