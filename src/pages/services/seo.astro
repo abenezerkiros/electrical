@@ -3,8 +3,8 @@ import MainLayout from "../../layouts/MainLayout.astro";
 import Card from "../../components/ui/Card.astro";
 import { Image } from "astro:assets";
 
-import seoImg from "../../assets/pics/celing.jpg";
-import ceiling from "../../assets/pics/pexels-danita-white-2147858101-33921996.jpg";
+import seoImg from "../../assets/pics/celing.webp";
+import ceiling from "../../assets/pics/pexels-danita-white-2147858101-33921996.webp";
 import icon1 from "../../assets/icon1.svg";
 import icon2 from "../../assets/icon2.svg";
 import icon3 from "../../assets/icon3.svg";
@@ -150,7 +150,7 @@ const serviceItems = {
               {index + 1}
             </div>
             <div class="mb-4">
-              <Image src={step.icon} alt={step.title} class="h-12 w-auto" />
+              <Image src={step.icon} alt={step.title} class="h-12 w-auto"       loading="lazy"/>
             </div>
             <h3 class="text-xl font-medium mb-4">{step.title}</h3>
             <p>{step.description}</p>
@@ -195,7 +195,7 @@ const serviceItems = {
             </ul>
           </div>
           <div class="rounded-2xl p-8 [content-visibility:auto] [contain-intrinsic-size:400px]">
-            <Image src={ceiling} alt="Ceiling Fan Installation" class="w-full h-auto rounded-[35px]" />
+            <Image src={ceiling} alt="Ceiling Fan Installation" class="w-full h-auto rounded-[35px]"       loading="lazy" />
           </div>
         </div>
       </Card>

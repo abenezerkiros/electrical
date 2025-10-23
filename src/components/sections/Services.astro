@@ -4,13 +4,13 @@ import ServiceCard from "../ui/ServiceCard.astro";
 import Section from "./Section.astro";
 import { Image } from "astro:assets";
 
-import c1 from "../../assets/pics/celing.jpg";
+import c1 from "../../assets/pics/celing.webp";
 import c2 from "../../assets/pics/rewire.webp";
 import c3 from "../../assets/pics/cook.webp";
 import c4 from "../../assets/pics/floor.webp";
 import c5 from "../../assets/pics/car.webp";
 import c6 from "../../assets/pics/emergency.webp";
-import c8 from "../../assets/pics/pexels-shkrabaanthony-4981802.jpg";
+import c8 from "../../assets/pics/pexels-shkrabaanthony-4981802.webp";
 
 import Card from "../ui/Card.astro";
 
@@ -89,6 +89,7 @@ const description =
           class="h-[300px] w-auto sm:h-auto sm:w-full object-cover"
           widths={[400, 800, 1200, 1600]}   
           sizes="(max-width: 768px) 100vw, 50vw"
+                loading="lazy"
         />
       </div>
     </div>

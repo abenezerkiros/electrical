@@ -10,21 +10,47 @@ const { ...props } = Astro.props;
 <html lang="en">
   <MainHead {...props} />
   <body class="bg-white font-grotesk">
-    <!-- SVG Sprite: available on all pages -->
+    <!-- SVG Sprite -->
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
       <symbol id="icon-check" viewBox="0 0 20 20" fill="currentColor">
-        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+          clip-rule="evenodd"
+        />
       </symbol>
     </svg>
 
+    <!-- Preload Hero Image -->
+    <link
+      rel="preload"
+      as="image"
+      href="/hero.jpg"
+      imagesrcset="/hero-800.jpg 800w, /hero-1200.jpg 1200w"
+      imagesizes="100vw"
+    />
+
     <main>
       <Navbar />
-      <slot />
+
+      <!-- Above the fold -->
+      <slot name="hero" />
+
+      <!-- Below the fold sections -->
+      <div class="content-auto">
+        <slot />
+      </div>
+
       <Footer />
     </main>
   </body>
 
   <style>
+    .content-auto {
+      content-visibility: auto;
+      contain-intrinsic-size: 800px;
+    }
+
     html.lenis {
       height: auto;
     }

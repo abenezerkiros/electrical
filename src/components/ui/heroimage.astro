@@ -1,0 +1,17 @@
+---
+import { Image } from "astro:assets";
+const { src, alt = "Hero Image", priority = false } = Astro.props;
+---
+
+{priority && <link rel="preload" as="image" href={src.src} fetchpriority="high" />}
+
+<Image
+  src={src}
+  alt={alt}
+  loading={priority ? "eager" : "lazy"}
+  fetchpriority={priority ? "high" : "auto"}
+  class="w-full object-cover"
+  style={{ height: "600px" }}
+  widths={[400, 800, 1200, 1600]}
+  sizes="(max-width: 768px) 100vw, 50vw"
+/>

@@ -1,11 +1,10 @@
 ---
 import Section from "./Section.astro";
 import { Image } from "astro:assets";
-import HeroIlust from "../../assets/pexels-aizat-ramlan-1291546-9679179.jpg"
----
+import HeroImage from "../ui/heroimage.astro";
+import HeroIlust from "../../assets/pexels-aizat-ramlan-1291546-9679179.webp";
 
-<!-- Preload hero image for LCP -->
-<link rel="preload" as="image" href={HeroIlust.src} fetchpriority="high" />
+---
 
 <Section id="home">
   <div class="relative flex flex-col md:flex-row items-center" id="hero">
@@ -31,16 +30,8 @@ import HeroIlust from "../../assets/pexels-aizat-ramlan-1291546-9679179.jpg"
     </div>
 
     <div class="order-2 md:order-2 flex items-center py-5 md:w-6/12 md:pb-20 md:pt-10">
-        <Image
-          src={HeroIlust}
-          alt="Hero Illustration"
-          loading="eager"
-          fetchpriority="high"
-          style={{ height: "600px" }}
-          class="w-full object-cover"
-          widths={[400, 800, 1200, 1600]}
-          sizes="(max-width: 768px) 100vw, 50vw"
-        />
+ 
+        <HeroImage src={HeroIlust} alt="Hero electrician" priority/>
       </div>
       
   </div>

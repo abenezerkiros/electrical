@@ -32,7 +32,7 @@ const links = [
         >
           <picture>
             <a href="#home">
-              <Image src={Logo} alt="Logo for Kreatif Brand" />
+              <Image src={Logo} alt="Logo for Kreatif Brand" loading="lazy"/>
             </a>
           </picture>
           <ul class="flex flex-col sm:flex-row gap-5">
@@ -55,7 +55,7 @@ const links = [
                   <li>
                     <a href={logo.link} target="_blank">
                       <picture>
-                        <Image src={logo.src} alt={logo.name} />
+                        <Image src={logo.src} alt={logo.name} loading="lazy"/>
                       </picture>
                     </a>
                   </li>

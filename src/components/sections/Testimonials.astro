@@ -1,7 +1,7 @@
 ---
 import SectionTitle from "../ui/SectionTitle.astro";
-import SwiperSlider from "../ui/SwiperSlider.astro";
 import Section from "./Section.astro";
+import SwiperWrapper from "../ui/SwiperSlider.astro";
 ---
 
 <Section id="testimonials">
@@ -11,7 +11,9 @@ import Section from "./Section.astro";
       description="Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Services"
     />
     <div class="rounded-[45px] bg-dark mb-[150px] text-gray">
-      <SwiperSlider />
+      <SwiperWrapper client:visible />
     </div>
   </div>
 </Section>
+
+

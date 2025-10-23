@@ -33,11 +33,12 @@ const { index, titleTop, titleBottom, img, alt, link } = Astro.props;
         src={img}
         alt={alt}
         class="h-[200px] w-auto sm:h-auto sm:w-4/4 object-cover"
+              loading="lazy"
       />
     </picture>
     <div class="flex items-end">
       <a href={link} class="flex items-center gap-3.5"
-        ><Image src={index === 1 || index === 2 ? gob : wob} alt={alt} />
+        ><Image src={index === 1 || index === 2 ? gob : wob} alt={alt}       loading="lazy"/>
         <span class="hidden sm:block">Service Info</span></a
       >
     </div>
