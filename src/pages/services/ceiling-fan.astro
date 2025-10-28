@@ -10,7 +10,40 @@ import ceiling2 from "../../assets/pics/celiing2.webp"
 import icon2 from "../../assets/icon2.svg";
 import icon3 from "../../assets/icon3.svg";
 import icon4 from "../../assets/icon4.svg"; 
+import AccordionItem from "../../components/ui/AccordionItem.astro";
+
+
+
+const content = [
+  {
+    index: 1,
+    title: "Do I legally need an installer to fit a ceiling fan in the UK?",
+    description: "Yes. UK regulations require that installing a fan be carried out by a qualified, Part P-registered installer or electrician."
+  },
+  {
+    index: 2,
+    title: "Can I install a ceiling fan where there’s just a light fixture?",
+    description: "Often yes, but a fan-rated ceiling box and wiring check is needed by a professional installer."
+  },
+  {
+    index: 3,
+    title: "Are ceiling fans energy efficient in the UK?",
+    description: "Yes — ceiling fans cost about **1p per hour** to run and are ideal for improving energy efficiency in all seasons."
+  },  
+  {
+    index: 4,
+    title: "Can I use a ceiling fan in winter?",
+    description: "Yes. Many models include a reverse setting that circulates warm air — just ask our ceiling fan installers to show you. Triple: Reverse ceiling fan setting → improves → winter heat distribution"
+  },
+  {
+    index: 4,
+    title: "How long does installing a ceiling fan take?",
+    description: "Typically 1 to 3 hours, depending on complexity and access."
+  }
+];
 ---
+
+
 
 <MainLayout 
   title="Ceiling Fan Installation in Croydon | CR9 Electrician Croydon" 
@@ -192,6 +225,20 @@ import icon4 from "../../assets/icon4.svg";
       </div>
     </div>
   </section>
+  <section class="py-20 px-4 bg-white">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-8 text-center">Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        {content.map((item) => (
+          <AccordionItem
+            index={item.index}
+            title={item.title}
+            description={item.description}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
   <!-- WHY CHOOSE US -->
   <section class="py-20 bg-gray px-4">
     <div class="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-12 items-center">
@@ -213,7 +260,7 @@ import icon4 from "../../assets/icon4.svg";
   </section>
 
   <!-- READY TO BOOK -->
-  <section class="py-20 px-4" id="contact">
+  <section class="py-20 px-4 " id="contact">
     <div class="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-12 items-center">
       <div>
         <h2 class="text-3xl font-medium mb-6">Ready to Book?</h2>
