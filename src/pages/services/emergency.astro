@@ -1,0 +1,222 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+
+import seoImg from "../../assets/pics/celing.webp";
+import ceiling from "../../assets/pics/pexels-danita-white-2147858101-33921996.webp";
+
+---
+
+<MainLayout 
+  title="Emergency Electrician in Croydon | 24/7 Certified Rapid Response"
+  description="24-hour emergency electricians in Croydon for urgent repairs, power failures, and electrical faults. NICEIC-approved, fully insured, and rapid-response service."
+>
+
+  <!-- HERO -->
+  <section class="py-20 px-4 mx-auto max-w-screen-xl lg:py-28 lg:px-6">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-medium mb-6 leading-tight">
+          Emergency Electrician in Croydon — 24/7 Certified Rapid Response Services
+        </h1>
+        <p class="text-lg mb-8">
+          Electrical fault in the middle of the night? Burning smell from your fuse board? Our team of certified emergency electricians in Croydon are available 24 hours a day, 7 days a week for rapid call-outs, urgent repairs, and immediate electrical isolation.
+          <br/><br/>
+          We are NICEIC-approved electricians, fully insured and compliant with BS 7671 and Part P Building Regulations. Whether you're a homeowner, tenant, landlord or business — if it's urgent, we're ready to respond.
+        </p>
+        <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-green text-white rounded-2xl font-medium text-lg hover:bg-dark hover:text-white transition-all">
+          Call Now — 020 3519 9989
+        </a>
+      </div>
+      <div class="[content-visibility:auto] [contain-intrinsic-size:400px] relative">
+        <div class="bg-green rounded-[45px] p-1 md:p-2 relative z-10">
+          <Image src={seoImg} alt="Emergency Electrician in Croydon" class="w-full h-auto rounded-[35px]" />
+        </div>
+        <div class="absolute top-8 left-8 right-8 bottom-8 bg-dark rounded-[45px] -z-10"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCAL 24-HOUR ELECTRICIAN -->
+  <section class="py-20 bg-gray px-4">
+    <div class="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-3xl font-medium mb-6">Your Local 24-Hour Electrician in Croydon</h2>
+        <p class="mb-6">
+          Based in the heart of Croydon, we’re a team of certified emergency electricians who serve all areas of South London. With fast dispatch and a 1–2 hour arrival window, we respond to:
+        </p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Power outages (partial or total)</li>
+          <li>Burning smells, tripped RCDs or fuse boards</li>
+          <li>Electrical shocks or live wires</li>
+          <li>Emergency lighting failure in flats or commercial buildings</li>
+          <li>Landlord/HMO electrical emergencies</li>
+        </ul>
+        <p class="mt-4">We are your local, certified, and fast-response electricians — day or night.</p>
+      </div>
+      <div>
+        <Image src={ceiling} alt="Emergency Electricians Croydon" class="rounded-[35px]" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT QUALIFIES AS EMERGENCY -->
+  <section class="py-20 px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-6">What Qualifies as an Electrical Emergency?</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse text-left">
+          <thead class="bg-dark text-white">
+            <tr>
+              <th class="p-4">Situation</th>
+              <th class="p-4">Danger Involved</th>
+            </tr>
+          </thead>
+          <tbody class="bg-gray">
+            <tr><td class="p-4">Power cut (not neighbourhood-wide)</td><td class="p-4">Possible wiring failure or RCD issue</td></tr>
+            <tr><td class="p-4">Fuse board smells of burning</td><td class="p-4">Potential fire hazard — must isolate ASAP</td></tr>
+            <tr><td class="p-4">Sockets buzzing or sparking</td><td class="p-4">Arcing can lead to fires or shocks</td></tr>
+            <tr><td class="p-4">Repeated tripping of circuits</td><td class="p-4">Overload, water ingress, or faulty appliance</td></tr>
+            <tr><td class="p-4">Electric shocks from sockets</td><td class="p-4">Earthing failure — critical safety issue</td></tr>
+            <tr><td class="p-4">Water leak near sockets/lights</td><td class="p-4">Live circuit + moisture = extreme danger</td></tr>
+            <tr><td class="p-4">Damaged or exposed cabling</td><td class="p-4">May be live and lethal if touched</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMERGENCY SERVICES PROVIDED -->
+  <section class="py-20 bg-gray px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-8 text-center">Emergency Electrical Services We Provide</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse text-left">
+          <thead class="bg-dark text-white">
+            <tr>
+              <th class="p-4">Fault Type</th>
+              <th class="p-4">Our Response</th>
+              <th class="p-4">Typical Outcome</th>
+            </tr>
+          </thead>
+          <tbody class="bg-gray">
+            <tr><td class="p-4">Fuse board fault or fire risk</td><td class="p-4">Isolate, assess, repair or replace unit</td><td class="p-4">Power restored and fire risk eliminated</td></tr>
+            <tr><td class="p-4">Loss of power in key circuits</td><td class="p-4">Circuit tracing, RCD testing</td><td class="p-4">Safe reconnection or rewire arranged</td></tr>
+            <tr><td class="p-4">Appliance causing faults</td><td class="p-4">PAT testing, removal or circuit adjustment</td><td class="p-4">Fault isolated, safe usage confirmed</td></tr>
+            <tr><td class="p-4">Emergency lighting failure</td><td class="p-4">Bulb, wiring or driver fault diagnosis</td><td class="p-4">Restored safe exits in flats or shops</td></tr>
+            <tr><td class="p-4">Water ingress on circuits</td><td class="p-4">Isolation, drying, system restoration</td><td class="p-4">System made safe and compliant</td></tr>
+            <tr><td class="p-4">Landlord or tenant emergencies</td><td class="p-4">Urgent fix + optional certification</td><td class="p-4">Rental compliance and tenant safety</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="py-20 px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-8 text-center">24-Hour Emergency Electrician Pricing in Croydon</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse text-left">
+          <thead class="bg-dark text-white">
+            <tr>
+              <th class="p-4">Time Period</th>
+              <th class="p-4">Fixed Rate</th>
+            </tr>
+          </thead>
+          <tbody class="bg-gray">
+            <tr><td class="p-4">Mon–Fri, 7:00 am – 6:00 pm</td><td class="p-4">£99.00</td></tr>
+            <tr><td class="p-4">Evenings, Weekends & Bank Holidays</td><td class="p-4">£149.99</td></tr>
+            <tr><td class="p-4">Every night (12:00 am – 7:00 am, Any Day)</td><td class="p-4">£199.00</td></tr>
+          </tbody>
+        </table>
+        <p class="mt-4 text-center italic">We quote transparently for any work beyond the first hour or for parts required. No surprise charges.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPLIANCE -->
+  <section class="py-20 bg-gray px-4">
+    <div class="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-3xl font-medium mb-6">Compliance, Safety & Documentation</h2>
+        <ul class="space-y-2">
+          <li>NICEIC or NAPIT certified</li>
+          <li>Compliant with BS 7671:18th Edition Wiring Regulations</li>
+          <li>Registered to carry out work under Part P of Building Regulations</li>
+          <li>Fully insured and background-checked</li>
+          <li>Able to issue EICs and Minor Works Certificates</li>
+          <li>Trained in emergency isolation, lock-off and escalation protocols</li>
+        </ul>
+      </div>
+ 
+    </div>
+  </section>
+
+  <!-- VARIANTS -->
+  <section class="py-20 px-4 bg-white">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-6 text-center">Variants of Emergency Electrical Services We Cover</h2>
+      <p class="text-center mb-6">
+        This page is optimised to appear for all variations of emergency service queries, including:
+      </p>
+      <div class="grid md:grid-cols-2 gap-4 max-w-3xl mx-auto">
+        <ul class="list-disc pl-6 space-y-1">
+          <li>24 hour emergency electrician</li>
+          <li>Same-day electrician Croydon</li>
+          <li>Urgent call-out electrician</li>
+          <li>Electrician near me open now</li>
+          <li>Weekend emergency electrician</li>
+        </ul>
+        <ul class="list-disc pl-6 space-y-1">
+          <li>Night-time or out-of-hours electrician</li>
+          <li>Electrician for tripped fuses</li>
+          <li>Fire risk electrical fault repair</li>
+          <li>Emergency domestic electrician</li>
+          <li>Landlord/HMO emergency electrical repair</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="py-20 bg-gray px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-8 text-center">Why Choose Our Emergency Electricians?</h2>
+      <ul class="list-disc pl-6 space-y-2 max-w-3xl mx-auto">
+        <li>Available 24/7 — including all bank holidays</li>
+        <li>Fast dispatch — typically within 1–2 hours</li>
+        <li>Fully certified with NICEIC/NAPIT</li>
+        <li>Transparent pricing — no hidden extras</li>
+        <li>Friendly, uniformed professionals</li>
+        <li>Experience with domestic, commercial & HMO emergencies</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- AREAS COVERED -->
+  <section class="py-20 px-4 bg-white">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-8 text-center">Where We Cover</h2>
+      <p class="text-center max-w-3xl mx-auto">
+        We operate across all Croydon boroughs and surrounding areas, including:
+      </p>
+      <p class="text-center max-w-3xl mx-auto mt-4">
+        Croydon Town Centre, South Croydon, Purley, Norbury, Addiscombe, Thornton Heath, Selsdon, Coulsdon, Kenley, Waddon, Upper Norwood, Shirley, Crystal Palace and all nearby South London zones.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="py-20 bg-gray px-4" id="contact">
+    <div class="max-w-screen-xl mx-auto text-center">
+      <h2 class="text-3xl font-medium mb-6">Book an Emergency Call-Out Now</h2>
+      <p class="text-lg mb-4">☎️ <strong>Call Us: 020 3519 9989</strong></p>
+      <p class="mb-6">We’re here when you need us most — even if it’s 2am on a Sunday. Let us handle your emergency quickly, safely, and professionally.</p>
+      <a href="tel:02035199989" class="inline-flex items-center justify-center px-8 py-4 bg-green text-white rounded-2xl font-medium text-lg hover:bg-dark hover:text-white transition-all">
+        Call Now 020 3519 9989
+      </a>
+    </div>
+  </section>
+
+</MainLayout>
