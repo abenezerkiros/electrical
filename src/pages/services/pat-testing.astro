@@ -1,0 +1,557 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+import AccordionItem from "../../components/ui/AccordionItem.astro";
+
+import seoImg from "../../assets/pics/rewire.webp";
+
+---
+
+<MainLayout 
+  title="PAT Testing in Croydon – Portable Appliance Testing for Business, Landlords & Public Premises"
+  description="Professional PAT testing in Croydon for businesses, landlords & public premises. Portable appliance testing, compliance certificates, and full documentation. Free quotes available."
+>
+
+  <!-- HERO -->
+  <section class="py-20 px-4 mx-auto max-w-screen-xl lg:py-28 lg:px-6">
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-medium mb-6 leading-tight">
+        PAT Testing in Croydon – Portable Appliance Testing for Business, Landlords & Public Premises
+      </h1>
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+
+        <p class="text-lg mb-8">
+          At CR9 Electricians, we offer professional PAT testing in Croydon to help businesses, landlords, and public institutions stay safe and compliant. Our fully certified electricians carry out systematic inspection and testing of portable electrical equipment and portable electrical appliances in accordance with UK legislation and insurance requirements.
+          <br/><br/>
+          While PAT testing is not a strict legal requirement in the UK, it is a legal responsibility for duty holders to ensure the safety of electrical systems and maintain a robust maintenance system.
+          <br/><br/>
+          Whether you manage offices, let residential property, or operate a school, our service ensures your portable appliances are safe to use and fully documented.
+          <br/><br/>
+          Portable appliance maintenance is an essential part of ongoing safety and compliance for businesses and landlords.
+        </p>
+        <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-green text-white rounded-2xl font-medium text-lg hover:bg-dark hover:text-white transition-all">
+          Get Free Quote — 020 3519 9989
+        </a>
+      </div>
+      <div class="[content-visibility:auto] [contain-intrinsic-size:400px] relative">
+        <div class="bg-green rounded-[45px] p-1 md:p-2 relative z-10">
+          <Image src={seoImg} alt="PAT Testing in Croydon" class="w-full h-auto rounded-[35px]" />
+        </div>
+        <div class="absolute top-8 left-8 right-8 bottom-8 bg-dark rounded-[45px] -z-10"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT IS PAT TESTING -->
+  <section class="py-20 bg-gray px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-6">What is PAT Testing?</h2>
+      <p class="mb-6">
+        PAT (Portable Appliance Testing) involves the visual inspection and electrical testing of any appliance that is powered by a plug. PAT testing includes a series of electrical tests using specialized test equipment, such as a portable appliance tester, to verify the safety of appliances and ensure they meet regulatory standards.
+      </p>
+      <p>
+        The goal is to ensure it is safe for continued use and to prevent electric shock or fire hazards from faulty equipment.
+      </p>
+    </div>
+  </section>
+
+  <!-- WHO NEEDS PAT TESTING -->
+  <section class="py-20 px-4">
+    <div class="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-3xl font-medium mb-6">Who Needs PAT Testing?</h2>
+        <p class="mb-6">CR9 Electricians provides PAT testing services to:</p>
+        <div class="grid md:grid-cols-2 gap-8">
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Offices and shared work-spaces</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Shops, salons, and hospitality venues</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Schools, nurseries, and care homes</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Construction sites and contractors</span>
+            </li>
+          </ul>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>HMOs and rental properties (landlord obligations)</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Letting agents and property managers</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Local authorities and public buildings</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Churches, charities, and community halls</span>
+            </li>
+          </ul>
+        </div>
+        <p class="mt-6">
+          In environments such as own offices, the risk level for portable electrical equipment is typically lower, so routine visual inspections may be sufficient. In contrast, high risk settings like construction sites require more frequent checks and testing of portable electrical items to ensure safety and compliance.
+        </p>
+        <p class="mt-4">
+          If your premises have staff, tenants, or members of the public using plug-in electrical appliances, PAT testing is either a legal duty or a key requirement for insurance and risk management. Faults reported during routine checks or inspections of portable electrical appliances may trigger further action or additional testing to maintain ongoing safety.
+        </p>
+      </div>
+      <div>
+        <Image src={seoImg} alt="PAT Testing Services" class="rounded-[35px]" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT ITEMS ARE TESTED -->
+  <section class="py-20 bg-gray px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-6">What Items Are Tested?</h2>
+      <p class="mb-6">We test all Class I and Class II appliances with plugs, including:</p>
+      <div class="grid md:grid-cols-2 gap-8">
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Computers, monitors, and power supplies</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Kettles, microwaves, and toasters</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Extension leads and multi-way adaptors</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Lamps, heaters, and fans</span>
+          </li>
+        </ul>
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Hairdryers, clippers, and salon equipment</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Fridges, dishwashers, and white goods</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Power tools, drills, and construction site gear</span>
+          </li>
+        </ul>
+      </div>
+      <p class="mt-6">
+        All appliances tested are subject to a combined inspection process, which may include in service inspection protocols for portable equipment. This ensures that both visual checks and functional tests are carried out as part of routine safety maintenance.
+      </p>
+      <p class="mt-4">
+        Battery powered devices are also considered where relevant, though the scope of tests may differ.
+      </p>
+      <p class="mt-4 font-medium">We provide clear labelling with pass/fail status and item ID.</p>
+    </div>
+  </section>
+
+  <!-- OUR PAT TESTING PROCESS -->
+  <section class="py-20 px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-6">Our PAT Testing Process</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span><strong>Asset Register</strong> – We create or update a detailed inventory of appliances.</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span><strong>Visual Inspection</strong> – Cable, casing, plug, and safety markings are checked.</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span><strong>Electrical Testing</strong> – Using calibrated testers, we measure earth continuity, insulation resistance, and lead polarity. Electrical testing includes checking the earth connection to verify safety, and, where appropriate, using reduced voltage for certain leakage current tests to prevent activating internal components and ensure accurate results.</span>
+          </li>
+        </ul>
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span><strong>Pass/Fail Labelling</strong> – Items are labelled with test date, status, and retest due date.</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span><strong>Certificate & Report</strong> – You receive a full digital report for compliance and insurance.</span>
+          </li>
+        </ul>
+      </div>
+      <p class="mt-6">
+        Previous tests and evidence suggests that this approach is a good method for maintaining ongoing safety and compliance, as it allows for adjustments based on risk assessments and historical results.
+      </p>
+      <p class="mt-4 font-medium">We work efficiently to minimise downtime and can test during off-hours where needed.</p>
+    </div>
+  </section>
+
+  <!-- PAT TESTING FREQUENCIES & RISK ASSESSMENT -->
+  <section class="py-20 bg-gray px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-6">PAT Testing Frequencies & Risk Assessment</h2>
+      <p class="mb-6">Testing frequency depends on:</p>
+      <div class="grid md:grid-cols-2 gap-8">
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Appliance type and class (I, II, III)</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Location (office, construction site, rental property)</span>
+          </li>
+        </ul>
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Usage (high-use equipment may need more frequent checks)</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>User population (e.g., public access or children present)</span>
+          </li>
+        </ul>
+      </div>
+      
+      <h3 class="text-xl font-medium mt-8 mb-4">Example recommendations:</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span><strong>Offices:</strong> 12–24 months</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span><strong>Kitchens:</strong> 6–12 months</span>
+          </li>
+        </ul>
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span><strong>Workshops/Sites:</strong> 3–6 months</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span><strong>HMOs and Rentals:</strong> Annually (aligned with tenancy turnover)</span>
+          </li>
+        </ul>
+      </div>
+      <p class="mt-6">
+        While annual testing is commonly recommended for some environments, it may not be necessary in all cases. The need for further portable appliance tests should be determined by risk assessment and the results of previous portable appliance tests. In many low-risk settings, regular visual inspections and user checks may be sufficient for ongoing portable appliance maintenance.
+      </p>
+      <p class="mt-4">
+        We help create a practical PAT schedule based on risk assessment and your maintenance system. The testing schedule should be reviewed periodically to determine if changes are needed for the foreseeable future.
+      </p>
+    </div>
+  </section>
+
+  <!-- COMPLIANCE & LEGAL REQUIREMENTS -->
+  <section class="py-20 px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-6">Compliance & Legal Requirements</h2>
+      <p class="mb-6">While not currently mandated under a single UK law, PAT testing is strongly supported by:</p>
+      <div class="grid md:grid-cols-2 gap-8">
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>The Electricity at Work Regulations 1989</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>The Health and Safety at Work Act 1974</span>
+          </li>
+        </ul>
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>HMO Licensing and landlord responsibilities</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Insurance and public liability cover policies</span>
+          </li>
+        </ul>
+      </div>
+      <p class="mt-6">
+        Although there is no formal qualification required in the UK to carry out PAT testing, completing a recognized pat testing course or following the IET code of practice can demonstrate competence and support compliance.
+      </p>
+      <p class="mt-4">
+        Legal responsibility for electrical safety includes ensuring that those conducting PAT testing are appropriately trained or supervised.
+      </p>
+      <p class="mt-4">
+        Failure to test and maintain appliances may void insurance or expose duty holders to prosecution.
+      </p>
+      <p class="mt-4 font-medium">CR9 Electricians ensures you meet your responsibilities with full documentation.</p>
+    </div>
+  </section>
+
+  <!-- HEALTH AND SAFETY BENEFITS -->
+  <section class="py-20 bg-gray px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-6">Health and Safety Benefits</h2>
+      <p class="mb-6">
+        Portable appliance testing (PAT) is a vital component of any workplace health and safety strategy, offering significant protection against electrical accidents and fire risks associated with faulty electrical equipment. By carrying out regular PAT tests and visual inspections, businesses can identify and address potential hazards before they lead to serious incidents, ensuring that all electrical appliances are operating correctly and safely.
+      </p>
+      <p class="mb-6">
+        Implementing a robust portable appliance testing regime demonstrates a clear commitment to electrical safety and compliance with the Electricity at Work Regulations. This proactive approach not only helps prevent electrical shocks, fires, and other accidents but also reduces the likelihood of legal action and reputational harm. Regular PAT testing, combined with user checks and formal visual inspections, allows businesses to detect faults early, maintain portable electric equipment to a high standard, and minimize costly downtime.
+      </p>
+      <p class="mb-6">
+        The Health and Safety Executive (HSE) strongly recommends that employers and duty holders conduct regular PAT tests as part of their responsibility to provide a safe working environment. This involves a combination of user checks, visual inspections, and formal testing using appropriate PAT testing equipment. Adhering to these best practice guidelines ensures compliance with safety regulations and helps businesses stay compliant with their legal obligations.
+      </p>
+      <p class="mb-6">
+        The frequency of portable appliance testing should be tailored to the specific risks of each environment. In low risk environments, such as offices, annual portable appliance testing may be sufficient. However, in higher risk settings—like construction sites or workshops—more frequent PAT tests may be required to ensure ongoing safety. It is essential that a competent person, such as a qualified electrician or trained PAT tester, carries out these inspections and tests to guarantee accurate results and effective risk management.
+      </p>
+      <p>
+        Ultimately, portable appliance testing is an essential part of maintaining a safe and healthy workplace. By prioritizing regular PAT testing and thorough inspections, businesses can prevent danger, ensure compliance with work regulations, and protect both staff and visitors from electrical hazards. This not only fulfills legal requirements but also supports greater control over equipment safety, reduces the risk of electrical accidents, and contributes to a productive, reliable working environment.
+      </p>
+    </div>
+  </section>
+
+  <!-- PAT TESTING COSTS -->
+  <section class="py-20 px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-8 text-center">PAT Testing Costs in Croydon</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse text-left">
+          <thead class="bg-dark text-white">
+            <tr>
+              <th class="p-4">No. of Items</th>
+              <th class="p-4">Price Guide (excl. VAT)</th>
+            </tr>
+          </thead>
+          <tbody class="bg-gray">
+            <tr><td class="p-4">Up to 20 items</td><td class="p-4">From £75 flat fee</td></tr>
+            <tr><td class="p-4">21–50 items</td><td class="p-4">From £95 total</td></tr>
+            <tr><td class="p-4">51–100 items</td><td class="p-4">From £125 total</td></tr>
+            <tr><td class="p-4">100+ items</td><td class="p-4">Custom quote based on volume</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-center italic">Includes all labels, reports, certificates, and light repairs (e.g. re-wiring loose plugs).</p>
+      <p class="mt-4 text-center">
+        All testing is carried out using calibrated pat testers and advanced test equipment to ensure accurate and reliable results.
+      </p>
+      <p class="mt-4 text-center font-medium">Volume discounts and multi-site testing available.</p>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="py-20 bg-gray px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-8 text-center">Why Choose CR9 Electricians for PAT Testing in Croydon?</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="text-center p-6 bg-white rounded-2xl">
+          <h3 class="font-medium mb-3">NICEIC/NAPIT registered electrical testers</h3>
+        </div>
+        <div class="text-center p-6 bg-white rounded-2xl">
+          <h3 class="font-medium mb-3">Quick, efficient onsite service with minimal disruption</h3>
+        </div>
+        <div class="text-center p-6 bg-white rounded-2xl">
+          <h3 class="font-medium mb-3">Digital certification issued within 24 hours</h3>
+        </div>
+        <div class="text-center p-6 bg-white rounded-2xl">
+          <h3 class="font-medium mb-3">Testing outside of working hours available</h3>
+        </div>
+        <div class="text-center p-6 bg-white rounded-2xl">
+          <h3 class="font-medium mb-3">Appliance logbooks and future reminders provided</h3>
+        </div>
+        <div class="text-center p-6 bg-white rounded-2xl">
+          <h3 class="font-medium mb-3">Fully insured and experienced across all sectors</h3>
+        </div>
+        <div class="text-center p-6 bg-white rounded-2xl">
+          <h3 class="font-medium mb-3">Ongoing portable appliance maintenance and a structured maintenance system, giving you greater control over portable equipment, portable electrical safety, and compliance</h3>
+        </div>
+      </div>
+      <p class="mt-8 text-center font-medium">We support business continuity, safety, and legal compliance in one seamless process.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 px-4 bg-white">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-8 text-center">PAT Testing in Croydon – Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        {[
+          {
+            index: 1,
+            title: "Is PAT testing a legal requirement?",
+            description: "PAT testing itself is not directly required by law. However, duty holders must ensure electrical equipment is safe for use under the Electricity at Work Regulations 1989. PAT testing is the most recognised and accepted method to demonstrate compliance, especially for insurance, landlords, and commercial environments."
+          },
+          {
+            index: 2,
+            title: "How often should PAT testing be done?",
+            description: "Frequency depends on appliance type, risk level, and environment. Offices often require testing every 12–24 months, kitchens every 6–12 months, and construction sites every 3–6 months. Rental properties typically require annual testing or at each new tenancy. We create a tailored schedule based on risk assessment."
+          },
+          {
+            index: 3,
+            title: "What appliances need PAT testing?",
+            description: "Any item that plugs into a socket should be tested. This includes kettles, computers, extension leads, heaters, hairdryers, microwaves, power tools, and white goods. Both Class I (earthed) and Class II (double insulated) appliances are included in testing."
+          },
+          {
+            index: 4,
+            title: "Does PAT testing include visual inspection?",
+            description: "Yes. Visual inspections are the first and most important step. We check plugs, cables, casings, fuses, strain relief, and safety markings. Many faults are identified before electrical testing begins, reducing risk and preventing failures."
+          },
+          {
+            index: 5,
+            title: "How long does PAT testing take?",
+            description: "Small sites may take under an hour. Larger sites with 50–200+ items may take several hours or a full day, depending on access and working hours. We offer out-of-hours testing to minimise disruption to businesses and public premises."
+          },
+          {
+            index: 6,
+            title: "Can PAT testing be done during office hours?",
+            description: "Yes. We work efficiently around staff and equipment. Where equipment cannot be switched off during working time, we can test during early mornings, evenings, or weekends."
+          },
+          {
+            index: 7,
+            title: "Do you provide certificates after testing?",
+            description: "Yes. You receive a full digital PAT Testing Certificate, an itemised asset report, pass/fail labels, retest dates, and any recommendations. These documents satisfy insurers, local authorities, and health & safety auditors."
+          },
+          {
+            index: 8,
+            title: "What happens if an appliance fails PAT testing?",
+            description: "We label the item as failed, remove it from use, and detail the fault in the report. Simple repairs—such as replacing plugs or fuses—are often fixed immediately. If the item is unsafe or unrepairable, we explain replacement options."
+          },
+          {
+            index: 9,
+            title: "Can landlords use PAT testing to meet HMO compliance?",
+            description: "Yes. HMOs and rental properties must ensure all electrical appliances provided to tenants are safe. Annual PAT testing is widely accepted by local councils as evidence of compliance during inspections and licensing renewals."
+          },
+          {
+            index: 10,
+            title: "Are battery-powered appliances included?",
+            description: "Battery-only devices typically fall outside PAT testing, but any appliance that can be charged via mains (Class III chargers) may require inspection of the charger or transformer unit. We assess relevance during the site visit."
+          },
+          {
+            index: 11,
+            title: "What is a 'competent person' for PAT testing?",
+            description: "A competent person is someone trained to recognise faults, carry out formal visual inspections, and perform electrical tests safely. Our testing is completed by qualified electricians or trained PAT technicians using calibrated instruments."
+          },
+          {
+            index: 12,
+            title: "Does PAT testing prevent fires?",
+            description: "PAT testing identifies damaged cables, loose connections, internal faults, overheating risks, and insulation breakdown—key causes of electrical fires. Regular testing significantly reduces the risk of electrical accidents in homes and workplaces."
+          },
+          {
+            index: 13,
+            title: "How much does PAT testing cost?",
+            description: "Costs start from £75 for up to 20 items, with discounts for higher volumes. The more appliances tested, the lower the cost per item. Pricing includes all labels, reports, and minor repairs such as replacing fuses or rewiring plugs."
+          },
+          {
+            index: 14,
+            title: "Can PAT testing be combined with other services?",
+            description: "Yes. We offer PAT testing alongside EICRs, emergency lighting tests, fire alarm checks, and general electrical maintenance. Multi-service discounts and combined compliance packages are available for businesses and landlords."
+          },
+          {
+            index: 15,
+            title: "Do I need PAT testing for my business insurance?",
+            description: "Most insurers require regular PAT testing as part of their risk mitigation policy. Failure to maintain safe portable appliances can invalidate insurance or delay claims related to electrical faults."
+          },
+          {
+            index: 16,
+            title: "What is included in the final PAT testing report?",
+            description: "Your report includes asset IDs, test results, pass/fail status, visual inspection notes, retest dates, overall risk rating, and certification. This provides clear evidence for compliance, audits, and safety records."
+          }
+        ].map((item) => (
+          <AccordionItem
+            index={item.index}
+            title={item.title}
+            description={item.description}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="py-20 bg-gray px-4" id="contact">
+    <div class="max-w-screen-xl mx-auto text-center">
+      <h2 class="text-3xl font-medium mb-6">Book PAT Testing in Croydon with CR9 Electricians</h2>
+      <p class="text-lg mb-4">To schedule PAT testing or request a quote, contact CR9 Electricians today. We offer one-off tests, scheduled visits, and support for multi-site operations.</p>
+      <p class="text-lg mb-4">Call 020 3519 9989 or request a callback.</p>
+      <p class="text-lg mb-4">See our Electricians Croydon page for additional services.</p>
+      <p class="text-lg mb-4">☎️ <strong>Call Us: 020 3519 9989</strong></p>
+      <a href="tel:02035199989" class="inline-flex items-center justify-center px-8 py-4 bg-green text-white rounded-2xl font-medium text-lg hover:bg-dark hover:text-white transition-all">
+        Call Now 020 3519 9989
+      </a>
+    </div>
+  </section>
+
+</MainLayout>

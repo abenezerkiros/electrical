@@ -15,24 +15,37 @@ import c8 from "../../assets/pics/pexels-shkrabaanthony-4981802.webp";
 import Card from "../ui/Card.astro";
 
 const cards = [
-  { index: 1, titleTop: "Ceiling Fan", titleBottom: "Installation", img: c1, alt: "Ceiling Fan Installation", link: "/services/ceiling-fan" },
-  { index: 2, titleTop: "Electrical", titleBottom: "Rewire", img: c2, alt: "Electrical Rewire", link: "/services/rewire" },
-  { index: 3, titleTop: "Electric Cooker", titleBottom: "Installation", img: c3, alt: "Cooker Installation", link: "/services/cooker" },
-  { index: 4, titleTop: "Electric Under Floor", titleBottom: "Heating Installation", img: c4, alt: "Under Floor Heating", link: "/services/underfloor" },
-  { index: 5, titleTop: "Electrical Vehicle", titleBottom: "Home Charger", img: c5, alt: "EV Home Charger", link: "/services/ev-charger" },
-  { index: 6, titleTop: "Emergency", titleBottom: "Electricians", img: c6, alt: "Emergency Electricians", link: "/services/emergency" },
+  { index: 1, titleTop: "Ceiling Fan", titleBottom: "Installation", img: c1, alt: "Ceiling Fan Installation", link: "/services/ceiling-fan-installations" },
+  { index: 2, titleTop: "EICR", titleBottom: "Certificates", img: c2, alt: "EICR Certificates", link: "/services/eicr-certificates" },
+  { index: 3, titleTop: "Electric Cooker", titleBottom: "Installation", img: c3, alt: "Electric Cooker Installation", link: "/services/electric-cooker-installations" },
+  { index: 4, titleTop: "Electric Under Floor", titleBottom: "Heating Installation", img: c4, alt: "Electric Under Floor Heating Installation", link: "/services/electric-under-floor-heating-installation" },
+  { index: 5, titleTop: "Electrical", titleBottom: "Rewiring", img: c5, alt: "Electrical Rewiring", link: "/services/electrical-rewiring" },
+  { index: 6, titleTop: "EV Home Charger", titleBottom: "Installation", img: c6, alt: "Electric Vehicle Home Charger Installation", link: "/services/electric-vehicle-home-charger-installation" },
+  { index: 7, titleTop: "Emergency", titleBottom: "Electricians", img: c1, alt: "Emergency Electricians", link: "/services/emergency-electricians" },
+  { index: 8, titleTop: "Emergency Lighting", titleBottom: "Installation", img: c2, alt: "Emergency Lighting Installation", link: "/services/emergency-lighting-installers" },
+  { index: 9, titleTop: "Extractor Fan", titleBottom: "Installation & Repair", img: c3, alt: "Extractor Fan Installation Repair", link: "/services/extractor-fan-installation-repair-replacement" },
+  { index: 10, titleTop: "PAT", titleBottom: "Testing", img: c4, alt: "PAT Testing", link: "/services/pat-testing" },
+  { index: 11, titleTop: "Security Lighting", titleBottom: "Installation", img: c5, alt: "Security Lighting Installation", link: "/services/security-lighting-installation" },
+  { index: 12, titleTop: "Smoke Detector", titleBottom: "Installation", img: c6, alt: "Smoke Detector Installation", link: "/services/smoke-detector-installation" },
+  { index: 13, titleTop: "Surge", titleBottom: "Protection", img: c1, alt: "Surge Protector", link: "/services/surge-protection-installations" },
+  { index: 14, titleTop: "Fire Alarm", titleBottom: "Installers", img: c2, alt: "Fire Alarm Installers", link: "/services/fire-alarm-installers" },
+  { index: 15, titleTop: "Consumer Unit", titleBottom: "Upgrade", img: c3, alt: "Consumer Unit Upgrade", link: "/services/consumer-unit-upgrade" },
+  { index: 16, titleTop: "Electrical Fault", titleBottom: "Finding", img: c4, alt: "Electrical Fault Finding and Diagnostics", link: "/services/electrical-fault-finding" },
+  { index: 17, titleTop: "Electrical Socket", titleBottom: "Installation", img: c5, alt: "Electrical Socket Installation", link: "/services/electrical-socket-installation" },
+  { index: 18, titleTop: "Electric Shower", titleBottom: "Installation", img: c6, alt: "Electric Shower Installation", link: "/services/electric-shower-installation" },
+  { index: 19, titleTop: "Outdoor Power", titleBottom: "Plug Installation", img: c1, alt: "Outdoor Power Plug Installation", link: "/services/outdoor-power-plug-installation" },
+  { index: 20, titleTop: "Smart Homes", titleBottom: "System Installation", img: c2, alt: "Smart Homes System Installation", link: "/services/smart-homes-system-installation" },
+  { index: 21, titleTop: "Under Floor Heating", titleBottom: "Repair", img: c3, alt: "Electric Under Floor Heating Repair", link: "/services/electric-under-floor-heating-repair" },
 ];
 
 const description =
   "At CR9, we provide a full range of reliable services to keep your home or business running safely and efficiently. From quick repairs and emergency call-outs to complete installations and upgrades, our expert electricians are ready to handle all your electrical needs with professionalism and care.";
 ---
 
-
-
 <Section id="services">
   <div class="mt-[140px] mb-5">
     <SectionTitle sectionTitle="Services" description={description} />
-    <div class="grid lg:grid-cols-2 lg:grid-rows-3 gap-10">
+    <div class="grid lg:grid-cols-2 lg:grid-rows-11 gap-10">
       {cards.map((card) => (
         <ServiceCard
           index={card.index}
@@ -57,16 +70,27 @@ const description =
         </p>
         <ul class="space-y-3 mb-8">
           {[
-            "Landlord Electrical Certificates",
-            "Electrical rewiring",
-            "Smoke and Fire Alarms",
-            "New light installations",
+            "Ceiling Fan Installation",
+            "EICR Certificates",
+            "Electric Cooker Installation",
+            "Electric Under Floor Heating Installation",
+            "Electrical Rewiring",
+            "Electric Vehicle Home Charger Installation",
+            "Emergency Electricians",
+            "Emergency Lighting Installation",
+            "Extractor Fan Installation & Repair",
             "PAT Testing",
-            "Periodic Electrical Inspections",
-            "Electrical Fault Finding",
-            "Door Entry Systems",
-            "EV Car Charging Port Installations",
-            "EICR Electrical Installation Condition Report"
+            "Security Lighting Installation",
+            "Smoke Detector Installation",
+            "Surge Protection",
+            "Fire Alarm Installation",
+            "Consumer Unit Upgrade",
+            "Electrical Fault Finding and Diagnostics",
+            "Electrical Socket Installation",
+            "Electric Shower Installation",
+            "Outdoor Power Plug Installation",
+            "Smart Homes System Installation",
+            "Electric Under Floor Heating Repair"
           ].map((item) => (
             <li class="flex items-start">
               <svg class="mr-2 w-5 h-5 mt-1 text-[#3b82f6]">
@@ -84,7 +108,7 @@ const description =
           class="h-[300px] w-auto sm:h-auto sm:w-full object-cover"
           widths={[400, 800, 1200, 1600]}   
           sizes="(max-width: 768px) 100vw, 50vw"
-                loading="lazy"
+          loading="lazy"
         />
       </div>
     </div>

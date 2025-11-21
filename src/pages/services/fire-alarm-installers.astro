@@ -1,0 +1,549 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+import AccordionItem from "../../components/ui/AccordionItem.astro";
+
+import seoImg from "../../assets/pics/rewire.webp";
+
+---
+
+<MainLayout 
+  title="Fire Alarm Installation in Croydon – Professional, Compliant Fire Alarm Systems"
+  description="Expert fire alarm installation in Croydon for homes & businesses. BS 5839-compliant systems, landlord certifications, and commercial fire alarms. Free quotes available."
+>
+
+  <!-- HERO -->
+  <section class="py-20 px-4 mx-auto max-w-screen-xl lg:py-28 lg:px-6">
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-medium mb-6 leading-tight">
+      Fire Alarm Installation in Croydon – Professional, Compliant Fire Alarm Systems
+    </h1>
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-3xl font-medium mb-6">Professional, Compliant Fire Alarm Installations by Certified Electricians</h2>
+        <p class="text-lg mb-8">
+          Protect your property and meet UK fire safety standards with expert fire alarm installation from CR9 Electricians. We serve homes and businesses across Croydon with tailored, BS 5839-compliant fire detection systems, installed by fully qualified electricians, with a competent person overseeing every stage of the installation process. All installations are carried out by third party accredited professionals to ensure compliance and safety.
+          <br/><br/>
+          Our systems are designed to meet insurance requirements for both residential and commercial clients.
+        </p>
+        <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-green text-white rounded-2xl font-medium text-lg hover:bg-dark hover:text-white transition-all">
+          Get Free Quote — 020 3519 9989
+        </a>
+      </div>
+      <div class="[content-visibility:auto] [contain-intrinsic-size:400px] relative">
+        <div class="bg-green rounded-[45px] p-1 md:p-2 relative z-10">
+          <Image src={seoImg} alt="Fire Alarm Installation in Croydon" class="w-full h-auto rounded-[35px]" />
+        </div>
+        <div class="absolute top-8 left-8 right-8 bottom-8 bg-dark rounded-[45px] -z-10"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TYPES OF FIRE ALARM SYSTEMS -->
+  <section class="py-20 bg-gray px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-6">Types of Fire Alarm Systems We Install</h2>
+      
+      <div class="mb-12">
+        <h3 class="text-2xl font-medium mb-4">Domestic Systems (BS 5839-6)</h3>
+        <div class="grid md:grid-cols-2 gap-8">
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Interlinked mains-powered smoke and heat alarms</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Wireless and hardwired configurations</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Domestic systems can be wired or wireless. Wired systems require connection to the mains electricity supply, while wireless systems rely on batteries.</span>
+            </li>
+          </ul>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Battery backup options</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Battery life is crucial in wireless systems. Regularly monitor battery status and replace batteries as needed to ensure reliable operation.</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Multi-sensor alarms for reduced false alerts</span>
+            </li>
+          </ul>
+        </div>
+        <p class="mt-4 font-medium">Always follow the manufacturer's instructions during installation to ensure safety and compliance.</p>
+      </div>
+
+      <div class="mb-12">
+        <h3 class="text-2xl font-medium mb-4">Commercial Systems (BS 5839-1)</h3>
+        <div class="grid md:grid-cols-2 gap-8">
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Conventional systems and conventional fire alarm systems: These are commonly used in small to medium-sized commercial properties. Conventional fire alarm systems divide the building into zones, making them cost-effective and practical for simpler premises, though they are less precise than addressable systems.</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Commercial fire alarm systems: Commercial fire alarm systems are essential for protecting businesses and commercial buildings from commercial fire risks. They are designed to meet the specific needs of commercial properties, ensuring compliance and safety.</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Selecting the appropriate fire detection system: It is crucial to choose the appropriate fire detection system for each commercial fire application to comply with UK regulations and ensure effective fire alarm operation.</span>
+            </li>
+          </ul>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Fire alarm control panel and control panels as key equipment: The fire alarm control panel, along with other control panels, serves as the central hub of a commercial fire alarm system. These pieces of equipment integrate sensors, detectors, and alarm devices, and require routine maintenance and testing to ensure system reliability.</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Addressable fire alarm systems</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Two-wire systems for budget-conscious applications</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Fire panels with multiple zones and remote monitoring capability</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        <div>
+          <h3 class="text-2xl font-medium mb-4">Detection Devices</h3>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Optical smoke detectors</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Ionisation smoke detectors</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Heat detectors</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>CO and gas alarms</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Manual call points and break glass units</span>
+            </li>
+          </ul>
+          <p class="mt-4 font-medium">All detection equipment is installed according to the manufacturer's instructions to ensure optimal performance, safety, and compliance.</p>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-medium mb-4">Notification Devices</h3>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Sounders and beacons</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Visual alarms for DDA compliance</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Voice alarm and PA integration for public spaces</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FIRE ALARM INSTALLATION ENVIRONMENTS -->
+  <section class="py-20 px-4">
+    <div class="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-3xl font-medium mb-6">Fire Alarm Installation Environments</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Homes and HMOs</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Flats and apartment blocks</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Retail shops and offices</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Warehouses and factories</span>
+            </li>
+          </ul>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Schools, care homes, medical facilities</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>Heritage buildings and churches</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-2 w-5 h-5 mt-1 text-green">
+                <use href="#icon-check"></use>
+              </svg>
+              <span>New builds and property conversions</span>
+            </li>
+          </ul>
+        </div>
+        <p class="mt-6">
+          Commercial buildings and complex buildings with multiple rooms—advanced fire alarm systems, such as addressable or integrated options, are available to meet the specific needs and legal requirements of these premises.
+        </p>
+        <p class="mt-4">
+          Wireless fire alarm systems are ideal for existing buildings, including heritage or listed structures, where minimal disruption during installation is required.
+        </p>
+      </div>
+      <div>
+        <Image src={seoImg} alt="Fire Alarm Installation Environments" class="rounded-[35px]" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FIRE ALARM INTEGRATION & SAFETY UPGRADES -->
+  <section class="py-20 bg-gray px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-6">Fire Alarm Integration & Safety Upgrades</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>EVAC and emergency lighting linkage</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Remote SMS or app notifications</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Auto-door release or magnetic fire door holders</span>
+          </li>
+        </ul>
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Integration with BMS, security systems, and CCTV systems for comprehensive building safety</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Fire curtain and suppression system triggers</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPLIANCE, CERTIFICATION & LEGAL REQUIREMENTS -->
+  <section class="py-20 px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-6">Compliance, Certification & Legal Requirements</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Installations meet BS 5839-1 and BS 5839-6</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Compliant with the Fire Safety (England) Regulations 2022</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>All systems are designed following a comprehensive fire risk assessment to identify hazards, determine detector placement, and ensure compliance with relevant regulations and British Standards, including British Standard BS 5839.</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Our solutions adhere to the latest regulatory reform, such as the Regulatory Reform (Fire Safety) Order 2005 and the Fire Safety Act 2021, ensuring your property meets current compliance requirements.</span>
+          </li>
+        </ul>
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Installations are tailored to meet insurance requirements and reduce fire risk for property owners.</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Support for landlord, HMO, and commercial licensing</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Full commissioning and certification included</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Fire logbooks and test sheets supplied</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Optional maintenance contracts and annual inspections</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAINTENANCE AND TESTING -->
+  <section class="py-20 bg-gray px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-6">Maintenance and Testing of Fire Alarm Systems</h2>
+      <p class="mb-6">
+        Regular maintenance and testing are essential to keep your fire alarm system in peak working condition. A properly maintained fire alarm not only provides early warning in the event of a fire but also helps save lives and minimize property damage by ensuring occupants and emergency services are alerted without delay.
+      </p>
+      <p class="mb-6">
+        Routine checks by a reputable fire alarm installer are the best way to guarantee your alarm system is always ready to perform when it matters most. Maintenance typically includes testing all alarms and detectors, inspecting the control panel, checking backup batteries, and verifying that the system communicates effectively with emergency services. These steps help prevent false alarms, which can cause unnecessary disruption and reduce confidence in your fire alarm systems.
+      </p>
+      <p class="mb-6">
+        Neglecting maintenance can lead to undetected faults, increased risk of false alarms, or even complete system failure—putting both people and property at risk. By scheduling regular inspections and servicing with a qualified professional, you ensure your fire alarm system remains reliable, compliant, and capable of providing the early warning needed to protect occupants and save lives.
+      </p>
+      <p>
+        For peace of mind and ongoing safety, trust a reputable fire alarm installer to carry out routine checks and maintenance on your alarm system. This proactive approach not only safeguards your building but also helps you meet insurance and regulatory requirements, keeping everyone in your property protected from fire.
+      </p>
+    </div>
+  </section>
+
+  <!-- PRICING GUIDE -->
+  <section class="py-20 px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-8 text-center">Pricing Guide for Fire Alarm Installations in Croydon</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse text-left">
+          <thead class="bg-dark text-white">
+            <tr>
+              <th class="p-4">System Type</th>
+              <th class="p-4">Suitable For</th>
+              <th class="p-4">Typical Price Range</th>
+            </tr>
+          </thead>
+          <tbody class="bg-gray">
+            <tr>
+              <td class="p-4">Domestic Interlinked Smoke Alarms</td>
+              <td class="p-4">2–3 bed house/HMO</td>
+              <td class="p-4">£300 – £550</td>
+            </tr>
+            <tr>
+              <td class="p-4">Conventional Fire Alarm System</td>
+              <td class="p-4">Small commercial unit</td>
+              <td class="p-4">£600 – £1,200</td>
+            </tr>
+            <tr>
+              <td class="p-4">Addressable Fire Alarm System</td>
+              <td class="p-4">Multi-storey property</td>
+              <td class="p-4">£1,500 – £5,000+</td>
+            </tr>
+            <tr>
+              <td class="p-4">Fire Alarm Maintenance Contract</td>
+              <td class="p-4">Residential/commercial</td>
+              <td class="p-4">from £120/year</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-center">
+        Pricing depends on layout, number of devices, access requirements, and compliance needs.
+      </p>
+      <p class="mt-4 text-center font-medium">
+        To ensure you get the best value and service for your fire alarm installation, always obtain multiple quotes from different installers and compare their prices and offerings.
+      </p>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="py-20 bg-gray px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-8 text-center">Why Choose CR9 Electricians for Fire Alarm Installation?</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="text-center p-6 bg-white rounded-2xl">
+          <h3 class="font-medium mb-3">Certified to BS 5839</h3>
+        </div>
+        <div class="text-center p-6 bg-white rounded-2xl">
+          <h3 class="font-medium mb-3">Full documentation and certification</h3>
+        </div>
+        <div class="text-center p-6 bg-white rounded-2xl">
+          <h3 class="font-medium mb-3">Landlord and business-ready</h3>
+        </div>
+        <div class="text-center p-6 bg-white rounded-2xl">
+          <h3 class="font-medium mb-3">Trusted in Croydon for 5-star service</h3>
+        </div>
+        <div class="text-center p-6 bg-white rounded-2xl">
+          <h3 class="font-medium mb-3">Third party accredited professionals</h3>
+        </div>
+        <div class="text-center p-6 bg-white rounded-2xl">
+          <h3 class="font-medium mb-3">Free consultations and site surveys</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 px-4 bg-white">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-8 text-center">Fire Alarm Installers in Croydon – Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        {[
+          {
+            index: 1,
+            title: "What's the difference between a conventional and addressable fire alarm?",
+            description: "A conventional system splits the building into zones, while an addressable system identifies the exact device triggering the alarm and can pinpoint the specific room, such as 'Board Room 2 on the fourth floor,' where the alarm was activated. Addressable systems are better suited for large or high-risk sites. For both types of systems, it is essential to use professional installation by trained and certified technicians who follow industry standards. Always find reputable fire alarm or smoke alarm fitters to ensure your system is installed correctly, reliable, and compliant with safety regulations."
+          },
+          {
+            index: 2,
+            title: "Do landlords in Croydon need fire alarms installed?",
+            description: "Yes. Landlords must install a working smoke alarm on each floor and a heat alarm in kitchens (BS 5839-6) to keep your property family safe. In addition, carbon monoxide alarms are legally required in any property with fuel-burning appliances. HMOs and licensed properties require full systems with certifications."
+          },
+          {
+            index: 3,
+            title: "Are wireless fire alarms reliable?",
+            description: "Yes. Modern wireless alarms are fully compliant and ideal for heritage buildings or retrofits where wiring access is limited. Wireless fire alarm systems are a type of fire detection system, and installing them is typically quick and straightforward compared to wired alternatives. These systems are highly effective at alerting people and can alert occupants rapidly in the event of a fire, ensuring safety and compliance with British Standards."
+          },
+          {
+            index: 4,
+            title: "Do you install fire alarms in listed buildings or conversions?",
+            description: "Yes, we install compliant systems with minimal disruption, using wireless or surface-mount systems that protect both safety and structure. Wireless fire alarm systems are especially ideal for existing buildings, including listed or heritage properties, where minimal disruption is required."
+          },
+          {
+            index: 5,
+            title: "How long does installation take?",
+            description: "A domestic system can often be installed in a day. The time required for installing a fire alarm system depends on the number of rooms and the complexity of the building. Commercial installs depend on size and complexity but typically range from 1 to 5 days."
+          },
+          {
+            index: 6,
+            title: "Can I test my fire alarm myself?",
+            description: "Yes, weekly testing is advised. Always follow the manufacturer's instructions when testing your fire alarm to ensure proper operation and safety. For commercial properties, you must also schedule professional inspections at least annually."
+          },
+          {
+            index: 7,
+            title: "What maintenance is required for fire alarm systems?",
+            description: "Regular maintenance includes testing all devices, checking control panels, verifying battery backups, and ensuring system integration works correctly. We offer maintenance contracts starting from £120/year to keep your system compliant and reliable."
+          },
+          {
+            index: 8,
+            title: "Do you provide certification for insurance purposes?",
+            description: "Yes, we provide full commissioning certificates, fire logbooks, and test sheets that satisfy insurance requirements for both residential and commercial properties."
+          }
+        ].map((item) => (
+          <AccordionItem
+            index={item.index}
+            title={item.title}
+            description={item.description}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="py-20 bg-gray px-4" id="contact">
+    <div class="max-w-screen-xl mx-auto text-center">
+      <h2 class="text-3xl font-medium mb-6">Book a Fire Alarm Installation in Croydon Today</h2>
+      <p class="text-lg mb-4">Protect lives, meet legal obligations, and prevent major fire damage with a professional fire alarm system from CR9 Electricians.</p>
+      <p class="text-lg mb-4">Call 020 3519 9989 now or request a quote online to get started.</p>
+      <p class="text-lg mb-4">We offer expert advice and free consultations to help you choose the right fire alarm solution.</p>
+      <p class="text-lg mb-4">☎️ <strong>Call Us: 020 3519 9989</strong></p>
+      <a href="tel:02035199989" class="inline-flex items-center justify-center px-8 py-4 bg-green text-white rounded-2xl font-medium text-lg hover:bg-dark hover:text-white transition-all">
+        Call Now 020 3519 9989
+      </a>
+    </div>
+  </section>
+
+</MainLayout>

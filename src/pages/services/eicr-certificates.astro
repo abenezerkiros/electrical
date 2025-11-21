@@ -1,0 +1,544 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+import AccordionItem from "../../components/ui/AccordionItem.astro";
+
+import seoImg from "../../assets/pics/rewire.webp";
+
+---
+
+<MainLayout 
+  title="EICR Certificate in Croydon - Landlord Electrical Safety Certificates"
+  description="Certified EICR testing and electrical safety certificates in Croydon. Landlord compliance, 18th Edition standards. Fast, reliable reports with same-day booking available."
+>
+
+  <!-- HERO -->
+  <section class="py-20 px-4 mx-auto max-w-screen-xl lg:py-28 lg:px-6">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-medium mb-6 leading-tight">
+          EICR Certificate in Croydon - Landlord Electrical Safety Certificates
+        </h1>
+        <p class="text-lg mb-8">
+          EICR Certificate: Certified Electrical Installation Condition Reports for Homes & Landlords
+          <br/><br/>
+          If you're a landlord, homeowner, or business in Croydon, you must ensure your electrical systems are safe and compliant. Landlords, homeowners, and business operators are legally responsible for meeting electrical safety obligations in their properties. CR9 Electricians provides fast, certified EICR testing and reports that meet UK regulations — including the 18th Edition Wiring Standards. Only a competent electrician should carry out these inspections to ensure all safety standards are properly met.
+        </p>
+        <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-green text-white rounded-2xl font-medium text-lg hover:bg-dark hover:text-white transition-all">
+          Book EICR Inspection — 020 3519 9989
+        </a>
+      </div>
+      <div class="[content-visibility:auto] [contain-intrinsic-size:400px] relative">
+        <div class="bg-green rounded-[45px] p-1 md:p-2 relative z-10">
+          <Image src={seoImg} alt="EICR Certificate in Croydon" class="w-full h-auto rounded-[35px]" />
+        </div>
+        <div class="absolute top-8 left-8 right-8 bottom-8 bg-dark rounded-[45px] -z-10"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPORTANCE OF ELECTRICAL INSTALLATION CERTIFICATES -->
+  <section class="py-20 bg-gray px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-6">Importance of Electrical Installation Certificates</h2>
+      <p class="mb-6">
+        Electrical Installation Certificates (EICs) play a vital role in ensuring the safety and compliance of electrical installations within any property. Issued only after a thorough inspection and testing by a qualified electrician, these certificates confirm that the electrical system meets the latest electrical safety standards.
+      </p>
+      <p class="mb-6">
+        For landlords in the private rented sector, holding valid electrical installation certificates is not just best practice—it's a legal requirement. EICs help identify potential electrical hazards before they become serious issues, reducing the risk of electrical fires and safeguarding both property and occupants.
+      </p>
+      <p>
+        In rental properties, an EIC demonstrates a landlord's commitment to providing a safe living environment, while also offering peace of mind to tenants. By maintaining up-to-date electrical installation certificates, property owners can ensure their electrical installations are compliant, reliable, and less likely to cause costly or dangerous problems in the future.
+      </p>
+    </div>
+  </section>
+
+  <!-- PURPOSE OF EICR INSPECTIONS -->
+  <section class="py-20 px-4">
+    <div class="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <Image src={seoImg} alt="EICR Inspection Process" class="rounded-[35px]" loading="lazy" />
+      </div>
+      <div>
+        <h2 class="text-3xl font-medium mb-6">Purpose of EICR Inspections</h2>
+        <p class="mb-6">
+          The main goal of an Electrical Installation Condition Report (EICR) inspection is to thoroughly assess the safety and integrity of a property's electrical installation. During an EICR inspection, a qualified electrician will carry out a detailed visual inspection and a series of tests on the electrical system, including the fuse board, circuit breakers, light fittings, and other electrical equipment.
+        </p>
+        <p class="mb-6">
+          This process checks for signs of wear, damage, or deterioration, and ensures that all components comply with current regulations and safety standards. The installation condition report (EICR) provides a clear overview of the state of the electrical system, highlighting any defects, potential hazards, or areas where the installation falls short of required standards.
+        </p>
+        <p>
+          The report also includes recommendations for repairs or upgrades, helping property owners and landlords maintain safe and compliant electrical installations.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT IS AN EICR CERTIFICATE -->
+  <section class="py-20 bg-gray px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-6">What Is an EICR Certificate?</h2>
+      <p class="mb-6">
+        An EICR (Electrical Installation Condition Report) is a formal electrical inspection and test of the property's electrical systems. This electrical inspection identifies electrical faults, deterioration, defects, or non-compliance with current regulations and provides a coded summary of required remedial work.
+      </p>
+      <p class="text-lg font-medium">
+        EICRs are now a legal requirement for landlords in England every 5 years or at the start of a new tenancy.
+      </p>
+    </div>
+  </section>
+
+  <!-- WHAT WE CHECK DURING AN EICR -->
+  <section class="py-20 px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-6">What We Check During an EICR</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Consumer unit (fuse board) condition and safety</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Overloaded circuits or incorrect fuse ratings</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Continuity and insulation resistance of conductors</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Insulation resistance testing to assess the integrity of insulation around conductors</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Earth fault loop impedance (Zs) tests</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Residual current devices (RCD) functionality and trip time tests</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Earth bonding of gas and water pipes</span>
+          </li>
+        </ul>
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Visual damage or deterioration of sockets, switches, cables</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Inspection of visible cables for damage or deterioration</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Age of installation and overall system condition</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Identification of unsafe wiring or non-compliant features</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Checking the condition and operation of light switches</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Inspection of control gear within the electrical system</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Testing all electrical circuits for safety and compliance</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Inspection of outdoor electrical equipment, such as exterior lighting and sockets</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTIONS LISTED IN THE REPORT -->
+  <section class="py-20 bg-gray px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-6">Actions Listed in the Report</h2>
+      <p class="mb-6">
+        An EICR report provides a detailed list of actions required to bring the electrical installation up to current regulations and safety standards. These actions may involve repairing or replacing faulty electrical equipment, upgrading outdated components, or making modifications to the existing installation.
+      </p>
+      <p class="mb-6">
+        Each action is classified using a coding system to indicate its urgency and importance. For example, a C1 code signals that the installation is immediately dangerous and requires urgent attention, while a C2 code highlights potentially dangerous issues that should be addressed as soon as possible. Less urgent recommendations are marked as C3, indicating that improvements are advised but not essential for immediate safety.
+      </p>
+      <p>
+        Addressing the actions listed in the EICR report promptly is crucial to ensure the electrical installation remains safe and compliant, and to avoid the risks associated with unsafe or non-compliant electrical systems.
+      </p>
+    </div>
+  </section>
+
+  <!-- LEGAL COMPLIANCE -->
+  <section class="py-20 px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-6">Legal & Electrical Safety Standards Compliance Overview for Landlords</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Inspections are legally required every 5 years or at new tenancy</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Based on the Electrical Safety Standards in the Private Rented Sector Regulations 2020</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Must be completed by a registered electrician (NICEIC or NAPIT)</span>
+          </li>
+        </ul>
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Risk codes issued (C1: Immediate danger, C2: Potential danger, C3: Improvement recommended, FI: Further Investigation)</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Remedial work must be carried out within 28 days (or sooner if specified)</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Copy of report must be provided to tenants within 28 days</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO NEEDS AN EICR -->
+  <section class="py-20 bg-gray px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-6">Who Needs an EICR in Croydon?</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span><strong>Private landlords (legal obligation):</strong> An EICR is a landlord safety test legally required for every rental property</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span><strong>Letting agents</strong> managing rented property portfolios</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span><strong>Homeowners (recommended every 10 years):</strong> EICRs are recommended for all residential premises</span>
+          </li>
+        </ul>
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span><strong>Commercial property owners</strong> (insurance or lease requirement)</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span><strong>HMO managers</strong> needing licensing compliance</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span><strong>Buyers/sellers</strong> during property transactions</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="py-20 px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-8 text-center">EICR Certificate Cost and Pricing in Croydon</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse text-left">
+          <thead class="bg-dark text-white">
+            <tr>
+              <th class="p-4">Property Type</th>
+              <th class="p-4">Typical Cost Range</th>
+            </tr>
+          </thead>
+          <tbody class="bg-gray">
+            <tr><td class="p-4">1-Bed Flat</td><td class="p-4">£120 – £150</td></tr>
+            <tr><td class="p-4">2–3 Bed House</td><td class="p-4">£150 – £180</td></tr>
+            <tr><td class="p-4">4+ Bed Property</td><td class="p-4">£180 – £250+</td></tr>
+            <tr><td class="p-4">Commercial Unit (Small)</td><td class="p-4">£200 – £350</td></tr>
+            <tr><td class="p-4">HMO / Multi-Tenancy</td><td class="p-4">from £250</td></tr>
+          </tbody>
+        </table>
+        <p class="mt-4 text-center italic">Electrical safety certificate prices and EICR cost depend on factors such as the number of circuits, consumer units, property size, and access. The EICR test may also be more expensive for unique or larger homes. Quotes provided upfront.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPTIONAL ADD-ONS -->
+  <section class="py-20 bg-gray px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-6">Optional Add-Ons and Services</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Emergency or weekend testing appointments</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Remedial repairs to resolve C1/C2 issues</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Re-inspection and updated certificate after repairs</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Fuse box upgrades to meet compliance (if required)</span>
+          </li>
+        </ul>
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Issuing an electrical installation certificate after major works</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>All inspections carried out by qualified registered engineers</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>PAT Testing bundled for landlords and HMOs</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Maintenance contracts for commercial sites</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW SOON TO CORRECT ISSUES -->
+  <section class="py-20 px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-6">How Soon Should I Correct Any Electrical Issues</h2>
+      <p class="mb-6">
+        Electrical issues identified during an EICR inspection should be resolved without delay to protect the safety of everyone in the property. According to UK law, any urgent remedial work highlighted in the report must be completed within 28 days of the inspection date—or sooner if specified by the electrician.
+      </p>
+      <p class="mb-6">
+        Once the work is finished, written confirmation should be provided to all relevant parties, including the landlord, tenants, and the local housing authority. Ignoring or delaying necessary repairs can lead to legal penalties, fines, or even prosecution.
+      </p>
+      <p>
+        In cases where the electrical installation is found to be immediately dangerous, the electrician may recommend shutting down the affected circuits or the entire system until urgent remedial work is completed. Prompt action ensures compliance with safety standards and helps prevent accidents or further damage.
+      </p>
+    </div>
+  </section>
+
+  <!-- CHECKLIST FOR HIRING -->
+  <section class="py-20 bg-gray px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-6">Checklist for Hiring an Electrician</h2>
+      <p class="mb-6">Choosing the right professional for your EICR inspection is essential to ensure a thorough and reliable assessment of your electrical installation. Here's a checklist to help you hire a qualified electrician:</p>
+      <div class="grid md:grid-cols-2 gap-8">
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Confirm registration with NICEIC or NAPIT</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Check qualifications and EICR experience</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Request and compare multiple quotes</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Verify insurance and liability coverage</span>
+          </li>
+        </ul>
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Look for positive reviews and testimonials</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Ensure detailed reports with recommendations</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 w-5 h-5 mt-1 text-green">
+              <use href="#icon-check"></use>
+            </svg>
+            <span>Ask about UKAS accreditation</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 px-4 bg-white">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-medium mb-8 text-center">EICR Certificates in Croydon – Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        {[
+          {
+            index: 1,
+            title: "Can any electrician perform an EICR?",
+            description: "No. Only a qualified person—meaning a qualified electrician with the necessary credentials and qualifications, typically registered with a government-approved body (such as NICEIC or NAPIT)—can have an EICR carried out legally."
+          },
+          {
+            index: 2,
+            title: "How long does an EICR take to complete?",
+            description: "On average, it takes 2–4 hours for a domestic property. Larger homes or commercial sites may take longer depending on the number of circuits. An EICR is a form of periodic inspection, which is required at regular intervals to ensure ongoing electrical safety and compliance with regulations."
+          },
+          {
+            index: 3,
+            title: "What do the codes on an EICR mean?",
+            description: "C1: Immediate danger — disconnect immediately. This code means danger present and immediate action is required. C2: Potential danger — remedial work required ASAP. C3: Improvement recommended — not urgent, but best practice. FI: Further Investigation — more analysis needed."
+          },
+          {
+            index: 4,
+            title: "Is an EICR required when selling a home?",
+            description: "It's not a legal requirement, but it's recommended as it reassures buyers and speeds up the conveyancing process."
+          },
+          {
+            index: 5,
+            title: "What happens if my property fails the EICR?",
+            description: "You will need to complete the identified remedial work. CR9 Electricians offers immediate repairs and follow-up certification to restore compliance."
+          },
+          {
+            index: 6,
+            title: "How do I know if I already have a valid EICR?",
+            description: "Check the date on the last certificate. If it's more than 5 years old (or the tenant has changed since), you'll need a new report."
+          },
+          {
+            index: 7,
+            title: "Is the 18th Edition Wiring Regulations enforced?",
+            description: "Yes. The 18th Edition (BS 7671) is the latest version of technology's wiring regulations, also known as the IET Wiring Regulations. Reports from before 2019 may not meet all current safety expectations or comply with the current wiring regulations."
+          }
+        ].map((item) => (
+          <AccordionItem
+            index={item.index}
+            title={item.title}
+            description={item.description}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="py-20 bg-gray px-4" id="contact">
+    <div class="max-w-screen-xl mx-auto text-center">
+      <h2 class="text-3xl font-medium mb-6">Book Your EICR Certificate in Croydon Today</h2>
+      <p class="text-lg mb-4">Ensure your property is safe, legal, and fully compliant. Whether you're a landlord, letting agent, or homeowner, CR9 Electricians delivers fast and reliable EICR reports in Croydon.</p>
+      <div class="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-8">
+        <div class="text-center p-4">
+          <h3 class="font-medium mb-2">Landlord-legal certificates issued</h3>
+        </div>
+        <div class="text-center p-4">
+          <h3 class="font-medium mb-2">Same-day bookings available</h3>
+        </div>
+        <div class="text-center p-4">
+          <h3 class="font-medium mb-2">All faults explained clearly</h3>
+        </div>
+        <div class="text-center p-4">
+          <h3 class="font-medium mb-2">Competitive pricing with no upselling</h3>
+        </div>
+      </div>
+      <p class="text-lg mb-4">Call 020 3519 9989 now or book online in under 60 seconds.</p>
+      <p class="text-lg mb-4">☎️ <strong>Call Us: 020 3519 9989</strong></p>
+      <a href="tel:02035199989" class="inline-flex items-center justify-center px-8 py-4 bg-green text-white rounded-2xl font-medium text-lg hover:bg-dark hover:text-white transition-all">
+        Call Now 020 3519 9989
+      </a>
+    </div>
+  </section>
+
+</MainLayout>
